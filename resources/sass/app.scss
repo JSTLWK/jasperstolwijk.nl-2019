@@ -1,0 +1,13 @@
+//
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import 'tailwind';
+
+html, body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.triangle {
+    display: inline-block;
+    margin: 0 5px;
+    vertical-align: middle;
+}
