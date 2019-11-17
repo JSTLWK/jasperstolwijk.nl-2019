@@ -4,7 +4,7 @@
 /public/hot
 /public/storage
 /public/css/app.css
-/public/css/app.js
+/public/js/app.js
 /storage/*.key
 /vendor
 .env
