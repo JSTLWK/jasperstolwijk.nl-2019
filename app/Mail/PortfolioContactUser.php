@@ -7,13 +7,11 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class PortfolioContactEmail extends Mailable
+class PortfolioContactUser extends Mailable
 {
     use Queueable, SerializesModels;
 
-    /**
-     * @var
-     */
+
     protected $user;
 
     /**
@@ -33,6 +31,8 @@ class PortfolioContactEmail extends Mailable
      */
     public function build()
     {
-        return $this->view('assets.mail.portfolio.contact')->with(['user' => $this->user]);
+        return $this->view('assets.mail.portfolio.contact-user')
+                    ->replyTo($this->user->email)
+                    ->with(['user' => $this->user]);
     }
 }
