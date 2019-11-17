@@ -95,7 +95,7 @@ class PortfolioController extends Controller
 
         $data = $request->all();
 
-        Mail::to($request->input('email'))->send( new PortfolioContactEmail($data));
+        Mail::to($data['email'])->send( new PortfolioContactEmail($data));
         Mail::to('jasperstolwijk@icloud.com')->send( new PortfolioContactUser($data));
 
 

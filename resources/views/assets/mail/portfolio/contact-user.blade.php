@@ -1,3 +1,3 @@
-Naam: {{ $user->name }}
-E-mail: {{ $user->email }}
-Message: {{ $user->message }}
+Naam: {{ $user['name'] }}
+E-mail: {{ $user['email'] }}
+Message: {{ $user['message'] }}

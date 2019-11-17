@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20cc0fdb-a260-4642-97c8-863c6d783f35" name="Default Changelist" comment="Design finished">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="20cc0fdb-a260-4642-97c8-863c6d783f35" name="Default Changelist" comment="Contact vue component">
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Portfolio/ContactMe.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/PortfolioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/PortfolioController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/PortfolioContactUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/PortfolioContactUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/mail/portfolio/contact-user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/assets/mail/portfolio/contact-user.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/mail/portfolio/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/assets/mail/portfolio/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/portfolio.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/portfolio.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,12 +122,14 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/assets/mail/portfolio" />
+    <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/assets/mail/portfolio" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Api" />
       <recent name="$PROJECT_DIR$/public/img" />
     </key>
   </component>
@@ -154,8 +165,16 @@
       <workItem from="1572216261636" duration="463000" />
       <workItem from="1572288228100" duration="1979000" />
       <workItem from="1573681034099" duration="12317000" />
-      <workItem from="1573847192199" duration="12548000" />
+      <workItem from="1573847192199" duration="20730000" />
     </task>
+    <task id="LOCAL-00001" summary="Design finished">
+      <created>1574024830889</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574024830890</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +195,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Design finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Design finished" />
+    <MESSAGE value="Contact vue component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Contact vue component" />
   </component>
 </project>

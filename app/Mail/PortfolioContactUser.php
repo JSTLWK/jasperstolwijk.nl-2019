@@ -32,7 +32,7 @@ class PortfolioContactUser extends Mailable
     public function build()
     {
         return $this->view('assets.mail.portfolio.contact-user')
-                    ->replyTo($this->user->email)
+                    ->replyTo($this->user['email'])
                     ->with(['user' => $this->user]);
     }
 }

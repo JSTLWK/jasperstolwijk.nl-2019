@@ -4,6 +4,8 @@
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/addd2f43dd.js" crossorigin="anonymous"></script>
+
 
     <title>Jasper Stolwijk | Web Developer </title>
     <link rel="stylesheet"
@@ -574,47 +576,8 @@
 <div class="container mx-auto text-gray-main my-24 contact-me">
     <h2 class="text-3xl text-center font-bold mt-16">Contact</h2>
     <div class="flex flex-wrap">
-        <div class="w-1/2">
-            <div class="ml-auto w-5/6 mr-4">
-                <div class="flex flex-wrap">
-                    <div class="w-full lg:w-1/2 mb-3 lg:pr-4">
-                        <label for="name"
-                               class="block text-gray-900 text-sm font-bold">Name</label>
-                        <input id="name"
-                               type="name"
-                               name="name"
-                               value=""
-                               required="required"
-                               autofocus="autofocus"
-                               class="text-sm shadow appearance-none rounded w-full py-2 px-3 focus:outline-none focus:shadow-outline ">
-                    </div>
-                    <div class="w-full lg:w-1/2 mb-3">
-                        <label for="email"
-                               class="block text-gray-900 text-sm font-bold">E-mail</label>
-                        <input id="email"
-                               type="email"
-                               name="email"
-                               value=""
-                               required="required"
-                               autofocus="autofocus"
-                               class="text-sm shadow appearance-none rounded w-full py-2 px-3 focus:outline-none focus:shadow-outline ">
-                    </div>
-                </div>
-                <div class="mb-2">
-                    <label for="email"
-                           class="block text-gray-900 text-sm font-bold">Message</label>
-                    <textarea id="email"
-                           type="email"
-                           name="email"
-                           value=""
-                           required="required"
-                           autofocus="autofocus"
-                              class="text-sm shadow appearance-none rounded w-full py-2 px-3 focus:outline-none focus:shadow-outline resize-none h-20"></textarea>
-                </div>
-                <button type="submit" class="float-right inline-block py-2 px-6 font-bold text-xs rounded text-white bg-blue-main hover:bg-green-dark uppercase shadow hover:shadow-md">
-                    Submit
-                </button>
-            </div>
+        <div class="w-1/2" id="app">
+            <contact-me end-point="{{ route('api.portfolio.contact') }}"></contact-me>
         </div>
         <div class="w-1/2">
             <div class="w-full lg:w-4/5">

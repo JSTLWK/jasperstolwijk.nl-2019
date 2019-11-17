@@ -181,7 +181,7 @@
                             <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top: 0px; padding-bottom: 10px; font-family: Tahoma, Verdana, sans-serif"><![endif]-->
                             <div style="color:#008FA8;font-family:Tahoma, Verdana, Segoe, sans-serif;line-height:1.2;padding-top:0px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
                                 <div style="font-family: Tahoma, Verdana, Segoe, sans-serif; line-height: 1.2; font-size: 12px; color: #008FA8; mso-line-height-alt: 14px;">
-                                    <p style="line-height: 1.2; font-size: 42px; mso-line-height-alt: 50px; margin: 0;"><span style="font-size: 42px;"><strong><span style="font-size: 42px;">Hello {{ $user->name }},</span></strong></span></p>
+                                    <p style="line-height: 1.2; font-size: 42px; mso-line-height-alt: 50px; margin: 0;"><span style="font-size: 42px;"><strong><span style="font-size: 42px;">Hello {{ $user['name'] }},</span></strong></span></p>
                                 </div>
                             </div>
                             <!--[if mso]></td></tr></table><![endif]-->
