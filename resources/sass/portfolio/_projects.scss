@@ -1,0 +1,19 @@
+
+.slantedDiv {
+    @apply relative w-full h-auto;
+}
+
+.slantedDiv:after {
+    @apply absolute w-full h-full bg-blue-main;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    transform-origin: top left;
+    transform: skewY(2deg);
+    z-index: -1;
+}
+
+.custom-label input:checked + svg {
+    display: block !important;
+}

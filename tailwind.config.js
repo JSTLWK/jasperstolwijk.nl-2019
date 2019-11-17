@@ -1,16 +1,30 @@
 module.exports = {
-  theme: {
-    extend: {
-        colors: {
-            gray: {
-                bg: '#E4E4E4',
+    theme: {
+        extend: {
+            margin: {
+                '-7': '-1.75rem',
             },
-            blue: {
-              main: '#008FA8',
+            colors: {
+                gray: {
+                    bg: '#E4E4E4',
+                    main: '#707070',
+                },
+                blue: {
+                    main: '#008FA8',
+                },
+                brands: {
+                    twitter: '#1DA1F2',
+                    linkedin: '#0E76A8',
+                    github: '#333333',
+
+                }
             }
         }
-    }
-  },
-  variants: {},
-  plugins: []
+    },
+    variants: {},
+    plugins: [
+        require('postcss-import'),
+        require('tailwindcss'),
+        require('autoprefixer'),
+    ]
 }

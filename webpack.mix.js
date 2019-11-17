@@ -1,5 +1,7 @@
-const mix = require('laravel-mix');
-const tailwindcss = require('tailwindcss')
+const mix         = require('laravel-mix');
+const tailwindcss = require('tailwindcss');
+let atImport      = require('postcss-import');
+
 
 /*
  |--------------------------------------------------------------------------
@@ -16,5 +18,5 @@ mix.js('resources/js/app.js', 'public/js')
    .sass('resources/sass/app.scss', 'public/css')
    .options({
        processCssUrls: false,
-       postCss: [ tailwindcss('./tailwind.config.js') ],
+       postCss: [atImport(), tailwindcss('./tailwind.config.js')],
    });

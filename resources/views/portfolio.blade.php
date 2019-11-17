@@ -2,6 +2,9 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
 
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Jasper Stolwijk | Web Developer </title>
     <link rel="stylesheet"
           type="text/css"
@@ -10,9 +13,8 @@
 </head>
 <body class="bg-gray-bg">
 
-<div style='background-image: url("img/bg-hero.png"); background-size: cover; background-position: right 0px bottom -100px; background-repeat: no-repeat; height: 60vh;'>
-
-    <div class="p-3 pr-10 w-full flex items-center">
+<div class="header">
+    <div class="p-3 pr-10 w-full flex h-20 header__title">
         <svg class="h-5"
              id="logo"
              xmlns="http://www.w3.org/2000/svg"
@@ -55,244 +57,619 @@
     </div>
 </div>
 
-<div class="container mx-auto">
-    <div class="w-full rounded-full text-lg bg-white text-blue-main -mt-8 flex items-center justify-center mb-32 shadow-lg">
-        <div class="w-1/3 p-5 text-center cursor-pointer hover:bg-gray-bg rounded-tl-full rounded-bl-full">Over mij
+<div class="container mx-auto flex flex-wrap justify-center">
+    <div class="w-full lg:w-4/5">
+        <div class="w-full rounded-full text-lg bg-white text-blue-main -mt-7 flex items-center justify-center mb-32 shadow-lg">
+            <div class="w-1/3 p-3 text-center cursor-pointer hover:bg-gray-bg rounded-tl-full rounded-bl-full">Over mij
+            </div>
+            <div class="w-1/3 p-3 text-center cursor-pointer hover:bg-gray-bg">Projecten</div>
+            <div class="w-1/3 p-3 text-center cursor-pointer hover:bg-gray-bg rounded-tr-full rounded-br-full">Contact
+            </div>
         </div>
-        <div class="w-1/3 p-5 text-center cursor-pointer hover:bg-gray-bg">Projecten</div>
-        <div class="w-1/3 p-5 text-center cursor-pointer hover:bg-gray-bg rounded-tr-full rounded-br-full">Contact</div>
     </div>
 
-    <div class="flex mb-32">
-        <div class="w-1/3 bg-white mx-10 p-5 pb-10 rounded-lg">
-            <div class="flex justify-center -mt-20">
-                <div class="bg-blue-main w-32 h-32 rounded-full flex justify-center items-center">
-                    <svg class="h-16"
-                         xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 67.195 84.822">
-                        <g id="Page-1"
-                           transform="translate(0.781 0.781)">
-                            <g id="Landing"
-                               transform="translate(0 0)">
-                                <g id="Section-skills"
-                                   transform="translate(0 0)">
-                                    <g id="content"
-                                       transform="translate(0)">
-                                        <g id="Col-R">
-                                            <g id="icon">
-                                                <g id="db">
-                                                    <path id="Path"
-                                                          d="M70.632,13.376c0,5.177-13.83,9.376-32.816,9.376S5,18.553,5,13.376,18.83,4,37.816,4s32.816,4.2,32.816,9.376Z"
-                                                          transform="translate(-5 -4)"
-                                                          fill="none"
-                                                          stroke="#fff"
-                                                          stroke-linecap="round"
-                                                          stroke-linejoin="round"
-                                                          stroke-width="1.563"
-                                                          fill-rule="evenodd"/>
-                                                    <path id="Path-2"
-                                                          data-name="Path"
-                                                          stroke="#fff"
-                                                          d="M70.632,9V30.877c0,5.177-13.83,9.376-32.816,9.376S5,36.055,5,30.877V9"
-                                                          fill="none"
-                                                          transform="translate(-5 1.001)"
-                                                          stroke-linecap="round"
-                                                          stroke-linejoin="round"
-                                                          stroke-width="1.563"
-                                                          fill-rule="evenodd"/>
-                                                    <path id="Path-3"
-                                                          data-name="Path"
-                                                          stroke="#fff"
-                                                          d="M70.632,30V51.877c0,5.177-13.83,9.376-32.816,9.376S5,57.055,5,51.877V30"
-                                                          fill="none"
-                                                          transform="translate(-5 22.006)"
-                                                          stroke-linecap="round"
-                                                          stroke-linejoin="round"
-                                                          stroke-width="1.563"
-                                                          fill-rule="evenodd"/>
-                                                    <path id="Path-4"
-                                                          data-name="Path"
-                                                          stroke="#fff"
-                                                          d="M70.632,20V41.877c0,5.177-13.83,9.376-32.816,9.376S5,47.055,5,41.877V20"
-                                                          fill="none"
-                                                          transform="translate(-5 12.004)"
-                                                          stroke-linecap="round"
-                                                          stroke-linejoin="round"
-                                                          stroke-width="1.563"
-                                                          fill-rule="evenodd"/>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-            </div>
-            <h1 class="font-bold mt-5">Backend Development</h1>
-            <ul class="list-disc mt-5 mx-5">
-                <li>Node.JS</li>
-                <li>OOP PHP</li>
-                <li>MYSQL</li>
-            </ul>
-        </div>
-        <div class="w-1/3 bg-white mx-10 p-5 pb-10 rounded-lg">
-            <div class="flex justify-center -mt-20">
-                <div class="bg-blue-main w-32 h-32 rounded-full flex justify-center items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                         class="h-12"
-                         viewBox="0 0 67.195 55.041">
-                        <g id="Page-1"
-                           transform="translate(0.781 0.781)">
-                            <g id="Landing"
-                               transform="translate(0 0)">
-                                <g id="Section-skills"
-                                   transform="translate(0 0)">
-                                    <g id="content"
+    <div class="w-full lg:w-4/5">
+        <div class="w-full flex flex-wrap mb-32">
+            <div class="w-full md:w-1/2 lg:w-1/3 px-10 mb-20 md:mb-0">
+                <div class="bg-white p-5 pb-10 rounded-lg">
+                    <div class="flex justify-center -mt-20">
+                        <div class="bg-blue-main w-24 h-24 rounded-full flex justify-center items-center">
+                            <svg class="h-10"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 67.195 84.822">
+                                <g id="Page-1"
+                                   transform="translate(0.781 0.781)">
+                                    <g id="Landing"
                                        transform="translate(0 0)">
-                                        <g id="Col-L">
-                                            <g id="icon">
-                                                <g id="frontend-icon">
-                                                    <path id="Path"
-                                                          d="M69.539,16.406h0Z"
-                                                          transform="translate(-3.906 -4.252)"
-                                                          fill="none"
-                                                          stroke="#fff"
-                                                          stroke-linecap="round"
-                                                          stroke-linejoin="round"
-                                                          stroke-width="1.563"
-                                                          fill-rule="evenodd"/>
-                                                    <path id="Path-2"
-                                                          data-name="Path"
-                                                          stroke="#fff"
-                                                          d="M65.892,8.594H7.552A3.646,3.646,0,0,0,3.906,12.24V58.426a3.646,3.646,0,0,0,3.646,3.646h58.34a3.646,3.646,0,0,0,3.646-3.646V12.24a3.646,3.646,0,0,0-3.646-3.646Z"
-                                                          fill="none"
-                                                          transform="translate(-3.906 -8.594)"
-                                                          stroke-linecap="round"
-                                                          stroke-linejoin="round"
-                                                          stroke-width="1.563"
-                                                          fill-rule="evenodd"/>
-                                                    <path id="Path-3"
-                                                          data-name="Path"
-                                                          stroke="#fff"
-                                                          d="M42.275,12.934a1.215,1.215,0,1,1-1.215-1.215,1.214,1.214,0,0,1,1.215,1.215Z"
-                                                          fill="none"
-                                                          transform="translate(16.065 -6.857)"
-                                                          stroke-linecap="round"
-                                                          stroke-linejoin="round"
-                                                          stroke-width="1.563"
-                                                          fill-rule="evenodd"/>
-                                                    <path id="Path-4"
-                                                          data-name="Path"
-                                                          stroke="#fff"
-                                                          d="M37.587,12.934a1.215,1.215,0,1,1-1.215-1.215,1.214,1.214,0,0,1,1.215,1.215Z"
-                                                          fill="none"
-                                                          transform="translate(13.46 -6.857)"
-                                                          stroke-linecap="round"
-                                                          stroke-linejoin="round"
-                                                          stroke-width="1.563"
-                                                          fill-rule="evenodd"/>
-                                                    <path id="Path-5"
-                                                          data-name="Path"
-                                                          stroke="#fff"
-                                                          d="M32.9,12.934a1.215,1.215,0,1,1-1.215-1.215A1.214,1.214,0,0,1,32.9,12.934Z"
-                                                          fill="none"
-                                                          transform="translate(10.855 -6.857)"
-                                                          stroke-linecap="round"
-                                                          stroke-linejoin="round"
-                                                          stroke-width="1.563"
-                                                          fill-rule="evenodd"/>
-                                                    <path id="Path-6"
-                                                          data-name="Path"
-                                                          stroke="#fff"
-                                                          d="M22.136,25.781l-7.292,6.077,7.292,6.077"
-                                                          fill="none"
-                                                          transform="translate(2.172 0.958)"
-                                                          stroke-linecap="round"
-                                                          stroke-linejoin="round"
-                                                          stroke-width="1.563"
-                                                          fill-rule="evenodd"/>
-                                                    <path id="Path-7"
-                                                          data-name="Path"
-                                                          stroke="#fff"
-                                                          d="M30.469,25.781l7.292,6.077-7.292,6.077"
-                                                          fill="none"
-                                                          transform="translate(10.855 0.958)"
-                                                          stroke-linecap="round"
-                                                          stroke-linejoin="round"
-                                                          stroke-width="1.563"
-                                                          fill-rule="evenodd"/>
-                                                    <path id="Path-8"
-                                                          data-name="Path"
-                                                          stroke="#fff"
-                                                          d="M22.656,44.534l7.292-21.877Z"
-                                                          fill="none"
-                                                          transform="translate(6.514 -0.779)"
-                                                          stroke-linecap="round"
-                                                          stroke-linejoin="round"
-                                                          stroke-width="1.563"
-                                                          fill-rule="evenodd"/>
+                                        <g id="Section-skills"
+                                           transform="translate(0 0)">
+                                            <g id="content"
+                                               transform="translate(0)">
+                                                <g id="Col-R">
+                                                    <g id="icon">
+                                                        <g id="db">
+                                                            <path id="Path"
+                                                                  d="M70.632,13.376c0,5.177-13.83,9.376-32.816,9.376S5,18.553,5,13.376,18.83,4,37.816,4s32.816,4.2,32.816,9.376Z"
+                                                                  transform="translate(-5 -4)"
+                                                                  fill="none"
+                                                                  stroke="#fff"
+                                                                  stroke-linecap="round"
+                                                                  stroke-linejoin="round"
+                                                                  stroke-width="1.563"
+                                                                  fill-rule="evenodd"/>
+                                                            <path id="Path-2"
+                                                                  data-name="Path"
+                                                                  stroke="#fff"
+                                                                  d="M70.632,9V30.877c0,5.177-13.83,9.376-32.816,9.376S5,36.055,5,30.877V9"
+                                                                  fill="none"
+                                                                  transform="translate(-5 1.001)"
+                                                                  stroke-linecap="round"
+                                                                  stroke-linejoin="round"
+                                                                  stroke-width="1.563"
+                                                                  fill-rule="evenodd"/>
+                                                            <path id="Path-3"
+                                                                  data-name="Path"
+                                                                  stroke="#fff"
+                                                                  d="M70.632,30V51.877c0,5.177-13.83,9.376-32.816,9.376S5,57.055,5,51.877V30"
+                                                                  fill="none"
+                                                                  transform="translate(-5 22.006)"
+                                                                  stroke-linecap="round"
+                                                                  stroke-linejoin="round"
+                                                                  stroke-width="1.563"
+                                                                  fill-rule="evenodd"/>
+                                                            <path id="Path-4"
+                                                                  data-name="Path"
+                                                                  stroke="#fff"
+                                                                  d="M70.632,20V41.877c0,5.177-13.83,9.376-32.816,9.376S5,47.055,5,41.877V20"
+                                                                  fill="none"
+                                                                  transform="translate(-5 12.004)"
+                                                                  stroke-linecap="round"
+                                                                  stroke-linejoin="round"
+                                                                  stroke-width="1.563"
+                                                                  fill-rule="evenodd"/>
+                                                        </g>
+                                                    </g>
                                                 </g>
                                             </g>
                                         </g>
                                     </g>
                                 </g>
-                            </g>
-                        </g>
-                    </svg>
-
+                            </svg>
+                        </div>
+                    </div>
+                    <h1 class="font-bold mt-5 text-center">Backend Development</h1>
+                    <ul class="list-disc mt-5 mx-5">
+                        <li>OOP PHP</li>
+                        <li>MYSQL</li>
+                        <li>Node.JS</li>
+                    </ul>
                 </div>
             </div>
-            <h1 class="font-bold mt-5">Frontend Development</h1>
-            <ul class="list-disc mt-5 mx-5">
-                <li>React/VueJS/JS</li>
-                <li>Webpack/Gulp/Grunt</li>
-                <li>HTML/CSS/SASS/LESS</li>
-            </ul>
-        </div>
-        <div class="w-1/3 bg-white mx-10 p-5 pb-10 rounded-lg">
-            <div class="flex justify-center -mt-20">
-                <div class="bg-blue-main w-32 h-32 rounded-full flex justify-center items-center">
-                    <svg id="Other_skills_Icon"
-                         data-name="Other skills Icon"
-                         xmlns="http://www.w3.org/2000/svg"
-                         class="h-12"
-                         viewBox="0 0 65.632 60.944">
-                        <g id="swiss_army_knife"
-                           transform="translate(0 0)">
-                            <path id="Shape"
-                                  d="M68.687,52.33c0-.012-.012-.012-.012-.023a.809.809,0,0,0-.152-.234c-.035-.047-.059-.105-.094-.152a1.953,1.953,0,0,0-.188-.141.918.918,0,0,0-.176-.117c-.059-.023-.129-.023-.188-.047a1,1,0,0,0-.258-.047H67.6a.684.684,0,0,0-.211.047,1.007,1.007,0,0,0-.2.035l-1.91.7-1.711-1.1a1.179,1.179,0,0,0-1.043-.117l-1.91.7-1.711-1.1a1.175,1.175,0,0,0-1.043-.117l-1.91.7-1.711-1.1a1.179,1.179,0,0,0-1.043-.117l-1.91.7-1.711-1.1a1.179,1.179,0,0,0-1.043-.117l-1.91.7-1.711-1.1a1.179,1.179,0,0,0-1.043-.117l-1.91.7-1.711-1.1a1.125,1.125,0,0,0-.844-.164l-.34.059,23.9-23.9a11.474,11.474,0,0,0,3.457-8.263A11.7,11.7,0,0,0,47.685,7.032H23.049c-12,0-19.2,5.883-19.5,6.13a1.176,1.176,0,0,0,0,1.8c.3.246,7.5,6.13,19.5,6.13H33.433L8.9,45.626A11.711,11.711,0,0,0,24.2,63.288H67.585a1.175,1.175,0,0,0,1.172-1.172V52.74a.684.684,0,0,0-.047-.211A1.306,1.306,0,0,0,68.687,52.33ZM23.049,18.752A31.3,31.3,0,0,1,6.336,14.064,31.373,31.373,0,0,1,23.049,9.376h22.1l-9.376,9.376ZM10.556,60.545a9.394,9.394,0,0,1,0-13.267L37.078,20.756h0l10.97-10.97A9.381,9.381,0,1,1,61.327,23.041l-37.5,37.5a9.394,9.394,0,0,1-13.267,0Zm16.174.4,9.458-9.458,3.188-.563L41.192,52.1a1.179,1.179,0,0,0,1.043.117l1.91-.7,1.711,1.1a1.175,1.175,0,0,0,1.043.117l1.91-.7,1.711,1.1a1.179,1.179,0,0,0,1.043.117l1.91-.7,1.711,1.1a1.175,1.175,0,0,0,1.043.117l1.91-.7,1.711,1.1a1.179,1.179,0,0,0,1.043.117l1.91-.7,1.711,1.1a1.112,1.112,0,0,0,.633.188,1.207,1.207,0,0,0,.41-.07l.856-.363v6.516Z"
-                                  transform="translate(-3.125 -4.688)"
-                                  fill="#fff"/>
-                            <path id="Shape-2"
-                                  data-name="Shape"
-                                  d="M37.891,17.97a3.516,3.516,0,1,0-3.516-3.516A3.526,3.526,0,0,0,37.891,17.97Zm0-4.688a1.172,1.172,0,1,1-1.172,1.172A1.175,1.175,0,0,1,37.891,13.282Z"
-                                  transform="translate(12.505 -1.561)"
-                                  fill="#fff"/>
-                            <path id="Shape-3"
-                                  data-name="Shape"
-                                  d="M19.92,41.4a1.2,1.2,0,0,0,.832-.34,1.167,1.167,0,0,0,0-1.653l-2.7-2.7,2.684-2.684a1.169,1.169,0,1,0-1.653-1.653L16.4,35.064,13.72,32.38a1.169,1.169,0,1,0-1.653,1.653l2.684,2.684L12.067,39.4a1.167,1.167,0,0,0,0,1.653,1.118,1.118,0,0,0,.82.352,1.2,1.2,0,0,0,.832-.34l2.684-2.7,2.684,2.684A1.163,1.163,0,0,0,19.92,41.4Z"
-                                  transform="translate(1.176 8.992)"
-                                  fill="#fff"/>
-                        </g>
-                    </svg>
-
+            <div class="w-full md:w-1/2 lg:w-1/3 px-10 mb-20 md:mb-0">
+                <div class="bg-white p-5 pb-10 rounded-lg">
+                    <div class="flex justify-center -mt-20">
+                        <div class="bg-blue-main w-24 h-24 rounded-full flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                 class="h-10"
+                                 viewBox="0 0 67.195 55.041">
+                                <g id="Page-1"
+                                   transform="translate(0.781 0.781)">
+                                    <g id="Landing"
+                                       transform="translate(0 0)">
+                                        <g id="Section-skills"
+                                           transform="translate(0 0)">
+                                            <g id="content"
+                                               transform="translate(0 0)">
+                                                <g id="Col-L">
+                                                    <g id="icon">
+                                                        <g id="frontend-icon">
+                                                            <path id="Path"
+                                                                  d="M69.539,16.406h0Z"
+                                                                  transform="translate(-3.906 -4.252)"
+                                                                  fill="none"
+                                                                  stroke="#fff"
+                                                                  stroke-linecap="round"
+                                                                  stroke-linejoin="round"
+                                                                  stroke-width="1.563"
+                                                                  fill-rule="evenodd"/>
+                                                            <path id="Path-2"
+                                                                  data-name="Path"
+                                                                  stroke="#fff"
+                                                                  d="M65.892,8.594H7.552A3.646,3.646,0,0,0,3.906,12.24V58.426a3.646,3.646,0,0,0,3.646,3.646h58.34a3.646,3.646,0,0,0,3.646-3.646V12.24a3.646,3.646,0,0,0-3.646-3.646Z"
+                                                                  fill="none"
+                                                                  transform="translate(-3.906 -8.594)"
+                                                                  stroke-linecap="round"
+                                                                  stroke-linejoin="round"
+                                                                  stroke-width="1.563"
+                                                                  fill-rule="evenodd"/>
+                                                            <path id="Path-3"
+                                                                  data-name="Path"
+                                                                  stroke="#fff"
+                                                                  d="M42.275,12.934a1.215,1.215,0,1,1-1.215-1.215,1.214,1.214,0,0,1,1.215,1.215Z"
+                                                                  fill="none"
+                                                                  transform="translate(16.065 -6.857)"
+                                                                  stroke-linecap="round"
+                                                                  stroke-linejoin="round"
+                                                                  stroke-width="1.563"
+                                                                  fill-rule="evenodd"/>
+                                                            <path id="Path-4"
+                                                                  data-name="Path"
+                                                                  stroke="#fff"
+                                                                  d="M37.587,12.934a1.215,1.215,0,1,1-1.215-1.215,1.214,1.214,0,0,1,1.215,1.215Z"
+                                                                  fill="none"
+                                                                  transform="translate(13.46 -6.857)"
+                                                                  stroke-linecap="round"
+                                                                  stroke-linejoin="round"
+                                                                  stroke-width="1.563"
+                                                                  fill-rule="evenodd"/>
+                                                            <path id="Path-5"
+                                                                  data-name="Path"
+                                                                  stroke="#fff"
+                                                                  d="M32.9,12.934a1.215,1.215,0,1,1-1.215-1.215A1.214,1.214,0,0,1,32.9,12.934Z"
+                                                                  fill="none"
+                                                                  transform="translate(10.855 -6.857)"
+                                                                  stroke-linecap="round"
+                                                                  stroke-linejoin="round"
+                                                                  stroke-width="1.563"
+                                                                  fill-rule="evenodd"/>
+                                                            <path id="Path-6"
+                                                                  data-name="Path"
+                                                                  stroke="#fff"
+                                                                  d="M22.136,25.781l-7.292,6.077,7.292,6.077"
+                                                                  fill="none"
+                                                                  transform="translate(2.172 0.958)"
+                                                                  stroke-linecap="round"
+                                                                  stroke-linejoin="round"
+                                                                  stroke-width="1.563"
+                                                                  fill-rule="evenodd"/>
+                                                            <path id="Path-7"
+                                                                  data-name="Path"
+                                                                  stroke="#fff"
+                                                                  d="M30.469,25.781l7.292,6.077-7.292,6.077"
+                                                                  fill="none"
+                                                                  transform="translate(10.855 0.958)"
+                                                                  stroke-linecap="round"
+                                                                  stroke-linejoin="round"
+                                                                  stroke-width="1.563"
+                                                                  fill-rule="evenodd"/>
+                                                            <path id="Path-8"
+                                                                  data-name="Path"
+                                                                  stroke="#fff"
+                                                                  d="M22.656,44.534l7.292-21.877Z"
+                                                                  fill="none"
+                                                                  transform="translate(6.514 -0.779)"
+                                                                  stroke-linecap="round"
+                                                                  stroke-linejoin="round"
+                                                                  stroke-width="1.563"
+                                                                  fill-rule="evenodd"/>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <h1 class="font-bold mt-5 text-center">Frontend Development</h1>
+                    <ul class="list-disc mt-5 mx-5">
+                        <li>React/VueJS/JS</li>
+                        <li>Webpack/Gulp</li>
+                        <li>HTML/CSS/SASS</li>
+                    </ul>
                 </div>
             </div>
-            <h1 class="font-bold mt-5">Other</h1>
-            <ul class="list-disc mt-5 mx-5">
-                <li>UX/Wireframing</li>
-                <li>Statamic CMS</li>
-                <li>MAC OS/Ubunutu</li>
-            </ul>
+            <div class="w-full md:w-1/2 lg:w-1/3 block md:hidden lg:block px-10 mb-20 md:mb-0">
+                <div class="bg-white p-5 pb-10 rounded-lg">
+                    <div class="flex justify-center -mt-20">
+                        <div class="bg-blue-main w-24 h-24 rounded-full flex justify-center items-center">
+                            <svg id="Other_skills_Icon"
+                                 data-name="Other skills Icon"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="h-10"
+                                 viewBox="0 0 65.632 60.944">
+                                <g id="swiss_army_knife"
+                                   transform="translate(0 0)">
+                                    <path id="Shape"
+                                          d="M68.687,52.33c0-.012-.012-.012-.012-.023a.809.809,0,0,0-.152-.234c-.035-.047-.059-.105-.094-.152a1.953,1.953,0,0,0-.188-.141.918.918,0,0,0-.176-.117c-.059-.023-.129-.023-.188-.047a1,1,0,0,0-.258-.047H67.6a.684.684,0,0,0-.211.047,1.007,1.007,0,0,0-.2.035l-1.91.7-1.711-1.1a1.179,1.179,0,0,0-1.043-.117l-1.91.7-1.711-1.1a1.175,1.175,0,0,0-1.043-.117l-1.91.7-1.711-1.1a1.179,1.179,0,0,0-1.043-.117l-1.91.7-1.711-1.1a1.179,1.179,0,0,0-1.043-.117l-1.91.7-1.711-1.1a1.179,1.179,0,0,0-1.043-.117l-1.91.7-1.711-1.1a1.125,1.125,0,0,0-.844-.164l-.34.059,23.9-23.9a11.474,11.474,0,0,0,3.457-8.263A11.7,11.7,0,0,0,47.685,7.032H23.049c-12,0-19.2,5.883-19.5,6.13a1.176,1.176,0,0,0,0,1.8c.3.246,7.5,6.13,19.5,6.13H33.433L8.9,45.626A11.711,11.711,0,0,0,24.2,63.288H67.585a1.175,1.175,0,0,0,1.172-1.172V52.74a.684.684,0,0,0-.047-.211A1.306,1.306,0,0,0,68.687,52.33ZM23.049,18.752A31.3,31.3,0,0,1,6.336,14.064,31.373,31.373,0,0,1,23.049,9.376h22.1l-9.376,9.376ZM10.556,60.545a9.394,9.394,0,0,1,0-13.267L37.078,20.756h0l10.97-10.97A9.381,9.381,0,1,1,61.327,23.041l-37.5,37.5a9.394,9.394,0,0,1-13.267,0Zm16.174.4,9.458-9.458,3.188-.563L41.192,52.1a1.179,1.179,0,0,0,1.043.117l1.91-.7,1.711,1.1a1.175,1.175,0,0,0,1.043.117l1.91-.7,1.711,1.1a1.179,1.179,0,0,0,1.043.117l1.91-.7,1.711,1.1a1.175,1.175,0,0,0,1.043.117l1.91-.7,1.711,1.1a1.179,1.179,0,0,0,1.043.117l1.91-.7,1.711,1.1a1.112,1.112,0,0,0,.633.188,1.207,1.207,0,0,0,.41-.07l.856-.363v6.516Z"
+                                          transform="translate(-3.125 -4.688)"
+                                          fill="#fff"/>
+                                    <path id="Shape-2"
+                                          data-name="Shape"
+                                          d="M37.891,17.97a3.516,3.516,0,1,0-3.516-3.516A3.526,3.526,0,0,0,37.891,17.97Zm0-4.688a1.172,1.172,0,1,1-1.172,1.172A1.175,1.175,0,0,1,37.891,13.282Z"
+                                          transform="translate(12.505 -1.561)"
+                                          fill="#fff"/>
+                                    <path id="Shape-3"
+                                          data-name="Shape"
+                                          d="M19.92,41.4a1.2,1.2,0,0,0,.832-.34,1.167,1.167,0,0,0,0-1.653l-2.7-2.7,2.684-2.684a1.169,1.169,0,1,0-1.653-1.653L16.4,35.064,13.72,32.38a1.169,1.169,0,1,0-1.653,1.653l2.684,2.684L12.067,39.4a1.167,1.167,0,0,0,0,1.653,1.118,1.118,0,0,0,.82.352,1.2,1.2,0,0,0,.832-.34l2.684-2.7,2.684,2.684A1.163,1.163,0,0,0,19.92,41.4Z"
+                                          transform="translate(1.176 8.992)"
+                                          fill="#fff"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <h1 class="font-bold mt-5 text-center">Other</h1>
+                    <ul class="list-disc mt-5 mx-5">
+                        <li>UX/Wireframing</li>
+                        <li>Statamic CMS</li>
+                        <li>MAC OS/Ubunutu</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-<div class="triangle-top">
+<div class="slantedDiv pt-24 pb-16">
+    <div class="container mx-auto text-white">
+        <div class="w-full lg:w-4/5 lg:mx-auto">
+            <h2 class="w-full text-center text-3xl mb-10 font-bold">Projects</h2>
+            <div class="flex flex-wrap">
+                <div class="w-full sm:w-1/4 lg:pr-6 my-2">
+                    <div class="relative mb-5">
+                        <input class="bg-white rounded-full w-full h-8 px-5"
+                               placeholder="Search project"/>
+                        <svg class="absolute h-4"
+                             style="top: 25%; right: 10px;"
+                             xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 27.995 28">
+                            <path id="search-solid"
+                                  d="M27.614,24.208l-5.452-5.452a1.311,1.311,0,0,0-.93-.383h-.891a11.369,11.369,0,1,0-1.969,1.969v.891a1.311,1.311,0,0,0,.383.93l5.452,5.452a1.307,1.307,0,0,0,1.854,0l1.548-1.548A1.319,1.319,0,0,0,27.614,24.208ZM11.374,18.373a7,7,0,1,1,7-7A7,7,0,0,1,11.374,18.373Z"
+                                  fill="#707070"/>
+                        </svg>
+                    </div>
 
+                    <div class="bg-white rounded text-black p-4">
+                        <h2 class="text-xl">Filter</h2>
+
+                        <h3 class="pl-4 text-lg mt-2">Framework</h3>
+                        <label class="custom-label items-center flex pl-4">
+                            <div class="bg-white shadow w-4 h-4 p-1 flex justify-center items-center mr-2">
+                                <input type="checkbox"
+                                       class="hidden">
+                                <svg class="hidden h-4 text-blue-main pointer-events-none"
+                                     viewBox="0 0 172 172">
+                                    <g fill="none"
+                                       stroke-width="none"
+                                       stroke-miterlimit="10"
+                                       font-family="none"
+                                       font-weight="none"
+                                       font-size="none"
+                                       text-anchor="none"
+                                       style="mix-blend-mode:normal">
+                                        <path d="M0 172V0h172v172z"/>
+                                        <path d="M145.433 37.933L64.5 118.8658 33.7337 88.0996l-10.134 10.1341L64.5 139.1341l91.067-91.067z"
+                                              fill="currentColor"
+                                              stroke-width="1"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <span class="select-none">Laravel</span>
+                        </label>
+                        <h3 class="pl-4 text-lg mt-2">Language</h3>
+                        <label class="custom-label items-center flex pl-4">
+                            <div class="bg-white shadow w-4 h-4 p-1 flex justify-center items-center mr-2">
+                                <input type="checkbox"
+                                       class="hidden">
+                                <svg class="hidden w-6 h-6 text-blue-main pointer-events-none"
+                                     viewBox="0 0 172 172">
+                                    <g fill="none"
+                                       stroke-width="none"
+                                       stroke-miterlimit="10"
+                                       font-family="none"
+                                       font-weight="none"
+                                       font-size="none"
+                                       text-anchor="none"
+                                       style="mix-blend-mode:normal">
+                                        <path d="M0 172V0h172v172z"/>
+                                        <path d="M145.433 37.933L64.5 118.8658 33.7337 88.0996l-10.134 10.1341L64.5 139.1341l91.067-91.067z"
+                                              fill="currentColor"
+                                              stroke-width="1"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <span class="select-none">PHP</span>
+                        </label>
+                        <label class="custom-label items-center flex pl-4">
+                            <div class="bg-white shadow w-4 h-4 p-1 flex justify-center items-center mr-2">
+                                <input type="checkbox"
+                                       class="hidden">
+                                <svg class="hidden w-6 h-6 text-blue-main pointer-events-none"
+                                     viewBox="0 0 172 172">
+                                    <g fill="none"
+                                       stroke-width="none"
+                                       stroke-miterlimit="10"
+                                       font-family="none"
+                                       font-weight="none"
+                                       font-size="none"
+                                       text-anchor="none"
+                                       style="mix-blend-mode:normal">
+                                        <path d="M0 172V0h172v172z"/>
+                                        <path d="M145.433 37.933L64.5 118.8658 33.7337 88.0996l-10.134 10.1341L64.5 139.1341l91.067-91.067z"
+                                              fill="currentColor"
+                                              stroke-width="1"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <span class="select-none">VueJS</span>
+                        </label>
+                        <label class="custom-label items-center flex pl-4">
+                            <div class="bg-white shadow w-4 h-4 p-1 flex justify-center items-center mr-2">
+                                <input type="checkbox"
+                                       class="hidden">
+                                <svg class="hidden w-6 h-6 text-blue-main pointer-events-none"
+                                     viewBox="0 0 172 172">
+                                    <g fill="none"
+                                       stroke-width="none"
+                                       stroke-miterlimit="10"
+                                       font-family="none"
+                                       font-weight="none"
+                                       font-size="none"
+                                       text-anchor="none"
+                                       style="mix-blend-mode:normal">
+                                        <path d="M0 172V0h172v172z"/>
+                                        <path d="M145.433 37.933L64.5 118.8658 33.7337 88.0996l-10.134 10.1341L64.5 139.1341l91.067-91.067z"
+                                              fill="currentColor"
+                                              stroke-width="1"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <span class="select-none">React</span>
+                        </label>
+                        <label class="custom-label items-center flex pl-4">
+                            <div class="bg-white shadow w-4 h-4 p-1 flex justify-center items-center mr-2">
+                                <input type="checkbox"
+                                       class="hidden">
+                                <svg class="hidden w-6 h-6 text-blue-main pointer-events-none"
+                                     viewBox="0 0 172 172">
+                                    <g fill="none"
+                                       stroke-width="none"
+                                       stroke-miterlimit="10"
+                                       font-family="none"
+                                       font-weight="none"
+                                       font-size="none"
+                                       text-anchor="none"
+                                       style="mix-blend-mode:normal">
+                                        <path d="M0 172V0h172v172z"/>
+                                        <path d="M145.433 37.933L64.5 118.8658 33.7337 88.0996l-10.134 10.1341L64.5 139.1341l91.067-91.067z"
+                                              fill="currentColor"
+                                              stroke-width="1"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <span class="select-none">Javascript</span>
+                        </label>
+                    </div>
+
+                </div>
+                <div class="w-full sm:w-3/4">
+                    <div class="flex flex-wrap">
+                        <div class="w-full md:w-1/2 lg:w-1/3 px-2 my-2">
+                            <div class="bg-white text-black rounded">
+                                <div class="h-48 rounded-t bg-cover"
+                                     style='background-image: url("https://www.w3schools.com/w3css/img_lights.jpg")'></div>
+                                <div class="p-5">
+                                    <h3 class="text-xl font-black text-black mb-3">Project title</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus justo
+                                        tortor,
+                                        in
+                                        condimentum dui placerat et. Praesent ut finibus eros. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 lg:w-1/3 px-2 my-2">
+                            <div class="bg-white text-black rounded">
+                                <div class="h-48 rounded-t bg-cover"
+                                     style='background-image: url("https://www.w3schools.com/w3css/img_lights.jpg")'></div>
+                                <div class="p-5">
+                                    <h3 class="text-xl font-black text-black mb-3">Project title</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus justo
+                                        tortor,
+                                        in
+                                        condimentum dui placerat et. Praesent ut finibus eros. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 lg:w-1/3 px-2 my-2">
+                            <div class="bg-white text-black rounded">
+                                <div class="h-48 rounded-t bg-cover"
+                                     style='background-image: url("https://www.w3schools.com/w3css/img_lights.jpg")'></div>
+                                <div class="p-5">
+                                    <h3 class="text-xl font-black text-black mb-3">Project title</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus justo
+                                        tortor,
+                                        in
+                                        condimentum dui placerat et. Praesent ut finibus eros. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 lg:w-1/3 px-2 my-2">
+                            <div class="bg-white text-black rounded">
+                                <div class="h-48 rounded-t bg-cover"
+                                     style='background-image: url("https://www.w3schools.com/w3css/img_lights.jpg")'></div>
+                                <div class="p-5">
+                                    <h3 class="text-xl font-black text-black mb-3">Project title</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus justo
+                                        tortor,
+                                        in
+                                        condimentum dui placerat et. Praesent ut finibus eros. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 lg:w-1/3 px-2 my-2">
+                            <div class="bg-white text-black rounded">
+                                <div class="h-48 rounded-t bg-cover"
+                                     style='background-image: url("https://www.w3schools.com/w3css/img_lights.jpg")'></div>
+                                <div class="p-5">
+                                    <h3 class="text-xl font-black text-black mb-3">Project title</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus justo
+                                        tortor,
+                                        in
+                                        condimentum dui placerat et. Praesent ut finibus eros. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 lg:w-1/3 px-2 my-2">
+                            <div class="bg-white text-black rounded">
+                                <div class="h-48 rounded-t bg-cover"
+                                     style='background-image: url("https://www.w3schools.com/w3css/img_lights.jpg")'></div>
+                                <div class="p-5">
+                                    <h3 class="text-xl font-black text-black mb-3">Project title</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus justo
+                                        tortor,
+                                        in
+                                        condimentum dui placerat et. Praesent ut finibus eros. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 lg:w-1/3 px-2 my-2">
+                            <div class="bg-white text-black rounded">
+                                <div class="h-48 rounded-t bg-cover"
+                                     style='background-image: url("https://www.w3schools.com/w3css/img_lights.jpg")'></div>
+                                <div class="p-5">
+                                    <h3 class="text-xl font-black text-black mb-3">Project title</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus justo
+                                        tortor,
+                                        in
+                                        condimentum dui placerat et. Praesent ut finibus eros. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 lg:w-1/3 px-2 my-2">
+                            <div class="bg-white text-black rounded">
+                                <div class="h-48 rounded-t bg-cover"
+                                     style='background-image: url("https://www.w3schools.com/w3css/img_lights.jpg")'></div>
+                                <div class="p-5">
+                                    <h3 class="text-xl font-black text-black mb-3">Project title</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus justo
+                                        tortor,
+                                        in
+                                        condimentum dui placerat et. Praesent ut finibus eros. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 lg:w-1/3 px-2 my-2">
+                            <div class="bg-white text-black rounded">
+                                <div class="h-48 rounded-t bg-cover"
+                                     style='background-image: url("https://www.w3schools.com/w3css/img_lights.jpg")'></div>
+                                <div class="p-5">
+                                    <h3 class="text-xl font-black text-black mb-3">Project title</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus justo
+                                        tortor,
+                                        in
+                                        condimentum dui placerat et. Praesent ut finibus eros. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
 </div>
+
+<div class="container mx-auto text-gray-main my-24 contact-me">
+    <h2 class="text-3xl text-center font-bold mt-16">Contact</h2>
+    <div class="flex flex-wrap">
+        <div class="w-1/2">
+            <div class="ml-auto w-5/6 mr-4">
+                <div class="flex flex-wrap">
+                    <div class="w-full lg:w-1/2 mb-3 lg:pr-4">
+                        <label for="name"
+                               class="block text-gray-900 text-sm font-bold">Name</label>
+                        <input id="name"
+                               type="name"
+                               name="name"
+                               value=""
+                               required="required"
+                               autofocus="autofocus"
+                               class="text-sm shadow appearance-none rounded w-full py-2 px-3 focus:outline-none focus:shadow-outline ">
+                    </div>
+                    <div class="w-full lg:w-1/2 mb-3">
+                        <label for="email"
+                               class="block text-gray-900 text-sm font-bold">E-mail</label>
+                        <input id="email"
+                               type="email"
+                               name="email"
+                               value=""
+                               required="required"
+                               autofocus="autofocus"
+                               class="text-sm shadow appearance-none rounded w-full py-2 px-3 focus:outline-none focus:shadow-outline ">
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <label for="email"
+                           class="block text-gray-900 text-sm font-bold">Message</label>
+                    <textarea id="email"
+                           type="email"
+                           name="email"
+                           value=""
+                           required="required"
+                           autofocus="autofocus"
+                              class="text-sm shadow appearance-none rounded w-full py-2 px-3 focus:outline-none focus:shadow-outline resize-none h-20"></textarea>
+                </div>
+                <button type="submit" class="float-right inline-block py-2 px-6 font-bold text-xs rounded text-white bg-blue-main hover:bg-green-dark uppercase shadow hover:shadow-md">
+                    Submit
+                </button>
+            </div>
+        </div>
+        <div class="w-1/2">
+            <div class="w-full lg:w-4/5">
+                <h3 class="text-xl font-bold mt-2">Who am I?</h3>
+                <p class="text-sm">Hello my name is Jasper Stolwijk. I’m a full-stack developer specialized in frontend
+                    and backend
+                    development. Want to know how I may help your project? Check out my
+                    <a href="">projects</a> and <a href="">resume</a> if you wish to
+                    get in touch with me.</p>
+                <p class="text-sm mt-4">You can also find me on the following channels</p>
+                <div class="flex flex-wrap mt-2">
+                    <div class="bg-brands-twitter mr-1 flex h-10 items-center justify-center rounded w-10">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             class="h-auto w-6"
+                             viewBox="0 0 35.552 28.875">
+                            <path id="twitter-brands"
+                                  d="M31.9,55.278c.023.316.023.632.023.947,0,9.633-7.332,20.731-20.731,20.731A20.591,20.591,0,0,1,0,73.686a15.073,15.073,0,0,0,1.76.09,14.593,14.593,0,0,0,9.046-3.113A7.3,7.3,0,0,1,3.993,65.61a9.189,9.189,0,0,0,1.376.113,7.707,7.707,0,0,0,1.917-.248,7.287,7.287,0,0,1-5.843-7.151v-.09a7.338,7.338,0,0,0,3.294.925,7.3,7.3,0,0,1-2.256-9.745,20.712,20.712,0,0,0,15.024,7.625,8.226,8.226,0,0,1-.18-1.669,7.293,7.293,0,0,1,12.61-4.985,14.346,14.346,0,0,0,4.625-1.76,7.267,7.267,0,0,1-3.2,4.015,14.607,14.607,0,0,0,4.2-1.128A15.663,15.663,0,0,1,31.9,55.278Z"
+                                  transform="translate(0 -48.082)"
+                                  fill="#fff"/>
+                        </svg>
+                    </div>
+                    <div class="bg-brands-linkedin mx-1 flex h-10 items-center justify-center rounded w-10">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             class="h-auto w-6"
+                             viewBox="0 0 35.554 35.554">
+                            <path id="linkedin-in-brands"
+                                  d="M7.958,35.564H.587V11.826H7.958ZM4.269,8.588A4.289,4.289,0,1,1,8.538,4.279,4.3,4.3,0,0,1,4.269,8.588ZM35.547,35.564H28.191V24.008c0-2.754-.056-6.286-3.832-6.286-3.832,0-4.42,2.992-4.42,6.087V35.564H12.576V11.826h7.07v3.238h.1a7.745,7.745,0,0,1,6.974-3.833c7.46,0,8.831,4.913,8.831,11.293V35.564Z"
+                                  transform="translate(0 -0.01)"
+                                  fill="#fff"/>
+                        </svg>
+
+                    </div>
+                    <div class="bg-brands-github ml-1 flex h-10 items-center justify-center rounded w-10">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             class="h-auto w-6"
+                             viewBox="0 0 35.554 28.444">
+                            <path id="github-alt-brands"
+                                  d="M13.785,83.607c0,1.548-.807,4.081-2.718,4.081s-2.718-2.533-2.718-4.081.807-4.081,2.718-4.081S13.785,82.059,13.785,83.607Zm21.77-3.741a16.054,16.054,0,0,1-1.3,7.037c-2.807,5.674-10.526,5.541-16.051,5.541-5.615,0-13.792.2-16.711-5.541A15.855,15.855,0,0,1,0,79.866a12.738,12.738,0,0,1,3.074-8.415,11.6,11.6,0,0,1-.57-3.615A7.376,7.376,0,0,1,3.585,64a11.574,11.574,0,0,1,8.059,2.667,28.373,28.373,0,0,1,6.57-.741,25.551,25.551,0,0,1,5.955.681A11.448,11.448,0,0,1,32.155,64a7.307,7.307,0,0,1,1.081,3.837,11.432,11.432,0,0,1-.57,3.57A12.762,12.762,0,0,1,35.554,79.866Zm-4.763,3.741c0-3.252-1.978-6.118-5.444-6.118a30.455,30.455,0,0,0-4.148.444,21.765,21.765,0,0,1-3.341.237,21.9,21.9,0,0,1-3.341-.237,29.961,29.961,0,0,0-4.148-.444c-3.467,0-5.444,2.867-5.444,6.118,0,6.5,5.955,7.5,11.14,7.5h3.57C24.844,91.11,30.792,90.118,30.792,83.607Zm-6.118-4.081c-1.911,0-2.718,2.533-2.718,4.081s.807,4.081,2.718,4.081,2.718-2.533,2.718-4.081S26.584,79.525,24.673,79.525Z"
+                                  transform="translate(0 -64)"
+                                  fill="#fff"/>
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer bg-blue-main py-2 text-white">
+    <div class="container mx-auto text-center text-xs">
+        Copyright &copy; Jasperstolwijk.nl All rights reserved.
+    </div>
+</div>
+
 
 <script type="text/javascript"
         src="{{ url('js/app.js') }}"></script>

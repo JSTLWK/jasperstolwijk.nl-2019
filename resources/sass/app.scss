@@ -6,8 +6,7 @@ html, body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-.triangle {
-    display: inline-block;
-    margin: 0 5px;
-    vertical-align: middle;
-}
+// Projects (Homepage)
+@import "portfolio/heading";
+@import "portfolio/projects";
+@import "portfolio/contact_me";

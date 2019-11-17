@@ -1,0 +1,19 @@
+.header {
+    background-image: url('../img/bg-hero.png');
+    background-size: cover;
+    background-position: right 0px bottom -100px;
+    background-repeat: no-repeat;
+    height: 60vh;
+    &__title {
+    background-image:  linear-gradient(rgba(black,0.5), rgba(black,0));
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .header {
+        background-position: right 0px bottom -30px;
+        height: 40vh;
+    }
+}
