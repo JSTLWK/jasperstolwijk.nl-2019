@@ -143,8 +143,8 @@
                 <div class="flex flex-wrap">
                     <div v-for="project in projects" class="w-full md:w-1/2 px-2 my-2">
                         <div class="bg-white text-black rounded">
-                            <div class="h-48 rounded-t bg-cover"
-                                 style='background-image: url("https://www.w3schools.com/w3css/img_lights.jpg")'></div>
+                            <div class="h-48 rounded-t bg-cover bg-top"
+                                 :style="{ backgroundImage: `url('${project.head_img}')` }"></div>
                             <div class="p-5">
                                 <h3 class="text-xl font-black text-black mb-3">{{ project.title}}</h3>
                                 <p> {{ project.introduction }} </p>

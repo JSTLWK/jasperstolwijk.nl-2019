@@ -30,7 +30,7 @@ class PortfolioController extends Controller
 
                 $tag = strtolower($tag);
 
-                $projects = Project::where('tags', 'like', "%{$tag}%")->get();
+                $projects = Project::where('tags', 'like', "%{$tag}%")->orderBy('sorting_order')->get();
 
                 for ($i = 0; $i < count($projects); $i++) {
                     $projects_array[] = $projects[$i];
@@ -48,7 +48,7 @@ class PortfolioController extends Controller
             $title = explode(",", $title);
 
             foreach ($title as $tag) {
-                $projects = Project::where('title', 'like', "{$tag}%")->get();
+                $projects = Project::where('title', 'like', "{$tag}%")->orderBy('sorting_order')->get();
 
                 for ($i = 0; $i < count($projects); $i++) {
                     $projects_array[] = $projects[$i];
@@ -60,7 +60,8 @@ class PortfolioController extends Controller
         }
 
 
-        return Project::all();
+
+        return Project::orderBy('sorting_order')->get();
     }
 
     /**
