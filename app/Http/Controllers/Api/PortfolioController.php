@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Mail\PortfolioContactEmail;
 use App\Mail\PortfolioContactUser;
+use App\Project;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -13,11 +14,53 @@ class PortfolioController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @return Project[]|\Illuminate\Database\Eloquent\Collection
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+
+        if ($tags = $request->input('tags')) {
+
+            $projects_array = [];
+
+            $tags = explode(",", $tags);
+
+            foreach ($tags as $tag) {
+
+                $tag = strtolower($tag);
+
+                $projects = Project::where('tags', 'like', "%{$tag}%")->get();
+
+                for ($i = 0; $i < count($projects); $i++) {
+                    $projects_array[] = $projects[$i];
+                }
+            }
+
+
+            return response()->json($projects_array);
+        }
+
+        if ($title = $request->input('title')) {
+
+            $projects_array = [];
+
+            $title = explode(",", $title);
+
+            foreach ($title as $tag) {
+                $projects = Project::where('title', 'like', "{$tag}%")->get();
+
+                for ($i = 0; $i < count($projects); $i++) {
+                    $projects_array[] = $projects[$i];
+                }
+            }
+
+
+            return response()->json($projects_array);
+        }
+
+
+        return Project::all();
     }
 
     /**
@@ -93,10 +136,16 @@ class PortfolioController extends Controller
     public function sendEmail(Request $request)
     {
 
+        $request->validate([
+            'name'    => 'string|required',
+            'email'   => 'email|required',
+            'message' => 'string|required',
+        ]);
+
         $data = $request->all();
 
-        Mail::to($data['email'])->send( new PortfolioContactEmail($data));
-        Mail::to('jasperstolwijk@icloud.com')->send( new PortfolioContactUser($data));
+        Mail::to($data['email'])->send(new PortfolioContactEmail($data));
+        Mail::to('jasperstolwijk@icloud.com')->send(new PortfolioContactUser($data));
 
 
         return response()->json(['success' => true]);

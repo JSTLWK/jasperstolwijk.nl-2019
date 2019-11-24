@@ -17,14 +17,15 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::prefix('v1/portfolio')->group(function () {
+Route::middleware('throttle:30|60,1')->prefix('v1/portfolio')->group(function () {
 
     /**
      * Route for the projects to show on the homepage.
      */
-    Route::resource('projects', 'Api\PortfolioController');
+    Route::resource('projects', 'Api\PortfolioController')->names([
+        'index' => 'api.projects'
+    ]);
     Route::post('contact', 'Api\PortfolioController@sendEmail')->name('api.portfolio.contact');
-
 
 });
 
