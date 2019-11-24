@@ -16,7 +16,6 @@
                            v-model="name"
                            type="name"
                            required="required"
-                           autofocus="autofocus"
                            class="text-sm shadow appearance-none rounded w-full py-2 px-3 outline-none "
                            :class="{'border': errors.name, 'border-red-500': errors.name}">
 
@@ -33,7 +32,6 @@
                            v-model="email"
                            type="email"
                            required="required"
-                           autofocus="autofocus"
                            class="text-sm shadow appearance-none rounded w-full py-2 px-3 outline-none"
                            :class="{'border': errors.email, 'border-red-500': errors.email}">
                 </div>
@@ -50,7 +48,6 @@
                           v-model="message"
                           type="message"
                           required="required"
-                          autofocus="autofocus"
                           class="text-sm shadow appearance-none rounded w-full py-2 px-3 outline-none resize-none h-20"
                           :class="{'border': errors.message, 'border-red-500': errors.message}"></textarea>
             </div>
