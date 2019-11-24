@@ -185,6 +185,9 @@
 
                         this.title = "";
                         this.getProjects();
+                    } else {
+                        this.url = this.endpoint;
+                        this.getProjects();
                     }
 
                 },
@@ -209,7 +212,6 @@
 
               axios.get(this.url)
                    .then( function (response) {
-                       console.log(response);
                        self.projects = response.data;
                    })
                    .catch(function (error) {
