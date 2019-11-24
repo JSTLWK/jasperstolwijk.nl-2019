@@ -63,13 +63,15 @@
     <div class="container mx-auto flex flex-wrap justify-center">
         <div class="w-full lg:w-4/5">
             <div class="w-full rounded-full text-lg bg-white text-blue-main -mt-7 flex items-center justify-center mb-32 shadow-lg">
-                <div class="w-1/3 p-3 text-center cursor-pointer hover:bg-gray-bg rounded-tl-full rounded-bl-full">Over
-                    mij
-                </div>
-                <div class="w-1/3 p-3 text-center cursor-pointer hover:bg-gray-bg">Projecten</div>
-                <div class="w-1/3 p-3 text-center cursor-pointer hover:bg-gray-bg rounded-tr-full rounded-br-full">
+
+                <a class="w-1/3 p-3 text-center cursor-pointer hover:bg-gray-bg rounded-tl-full rounded-bl-full"
+                   href="#aboutme">About Me</a>
+                <a href="#projects"
+                   class="w-1/3 p-3 text-center cursor-pointer hover:bg-gray-bg"
+                   title="Projects section">Projecten</a>
+                <a href="#contact" class="w-1/3 p-3 text-center cursor-pointer hover:bg-gray-bg rounded-tr-full rounded-br-full">
                     Contact
-                </div>
+                </a>
             </div>
         </div>
 
@@ -308,7 +310,7 @@
 
     <div class="slantedDiv pt-24 pb-16">
         <div class="container mx-auto text-white">
-            <div class="w-full lg:w-4/5 lg:mx-auto">
+            <div class="w-full lg:w-4/5 lg:mx-auto" id="projects">
                 <portfolio-filter endpoint="{{ route('api.projects') }}"></portfolio-filter>
             </div>
         </div>
@@ -321,7 +323,7 @@
                 <contact-me end-point="{{ route('api.portfolio.contact') }}"></contact-me>
             </div>
             <div class="w-full sm:w-1/2 mx-3 sm:mx-0">
-                <div class="w-full lg:w-4/5">
+                <div class="w-full lg:w-4/5" id="#aboutme">
                     <h3 class="text-xl font-bold mt-2">Who am I?</h3>
                     <p class="text-sm">Hello my name is Jasper Stolwijk. I’m a full-stack developer specialized in
                         frontend

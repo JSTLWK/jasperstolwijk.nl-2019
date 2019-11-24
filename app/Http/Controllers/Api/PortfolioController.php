@@ -38,7 +38,7 @@ class PortfolioController extends Controller
             }
 
 
-            return response()->json($projects_array);
+            return response()->json(array_unique($projects_array));
         }
 
         if ($title = $request->input('title')) {
@@ -56,7 +56,7 @@ class PortfolioController extends Controller
             }
 
 
-            return response()->json($projects_array);
+            return response()->json(array_unique($projects_array));
         }
 
 
