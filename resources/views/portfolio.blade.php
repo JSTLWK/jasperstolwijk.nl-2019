@@ -55,7 +55,7 @@
 
             <div class="h-5 ml-auto hidden sm:block">
                 <a class="border-2 border-white text-white rounded-full text-xs p-2 px-4"
-                   href="">Neem contact op</a>
+                   href="#contact">Contact me</a>
             </div>
         </div>
     </div>
@@ -314,7 +314,7 @@
         </div>
     </div>
 
-    <div class="container mx-auto text-gray-main my-24 contact-me">
+    <div class="container mx-auto text-gray-main my-24 contact-me" id="contact">
         <h2 class="text-3xl text-center font-bold mt-16">Contact</h2>
         <div class="flex flex-wrap">
             <div class="w-full sm:w-1/2 mx-3 sm:mx-0 sm:pr-4">
