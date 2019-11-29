@@ -18,7 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::middleware('throttle:30|60,1')->prefix('v1')->group(function () {
+Route::middleware('throttle:30|60,1')->prefix('/v1')->group(function () {
 
 
     Route::post('/sharex/create', function (Request $request) {
