@@ -32,6 +32,9 @@ Route::middleware('throttle:30|60,1')->prefix('v1')->group(function () {
 
         $file->moveAs($destinationPath, $filename);
 
+        return storage_path('app/public/ss/').$filename;
+
+
     })->name('sharex.api');
 
     /**
