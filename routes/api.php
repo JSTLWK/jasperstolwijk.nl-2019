@@ -21,7 +21,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::middleware('throttle:30|60,1')->prefix('v1')->group(function () {
 
 
-    Route::post('/', function (Request $request) {
+    Route::post('/sharex/create', function (Request $request) {
 
         $destinationPath = 'ss';
 
