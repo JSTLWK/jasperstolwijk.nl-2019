@@ -28,14 +28,14 @@ Route::middleware('throttle:30|60,1')->prefix('/v1')->group(function () {
         $file = $request->file('sharex');
         $random_string = Str::random(5);
 
-        $filename = $random_string.$file->getMimeType();
+        $filename = $random_string.$file->extension();
 
         $file->move($destinationPath, $filename);
 
-        return storage_path('app/public/ss/').$filename;
+        return url('/ss/'.$filename);
 
 
-    })->name('sharex.api');
+    })->name('api.sharex');
 
     /**
      * Route for the projects to show on the homepage.
