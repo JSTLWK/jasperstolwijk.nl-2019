@@ -28,7 +28,7 @@ Route::middleware('throttle:30|60,1')->prefix('/v1')->group(function () {
         $file = $request->file('sharex');
         $random_string = Str::random(5);
 
-        $filename = $random_string.$file->extension();
+        $filename = $random_string.".".$file->extension();
 
         $file->move($destinationPath, $filename);
 
