@@ -30,7 +30,7 @@ Route::middleware('throttle:30|60,1')->prefix('/v1')->group(function () {
 
         $filename = $random_string.$file->getMimeType();
 
-        $file->moveAs($destinationPath, $filename);
+        $file->move($destinationPath, $filename);
 
         return storage_path('app/public/ss/').$filename;
 
