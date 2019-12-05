@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
 /*
@@ -32,10 +33,19 @@ Route::middleware('throttle:30|60,1')->prefix('/v1')->group(function () {
 
         $file->move($destinationPath, $filename);
 
+        if (DB::table('statistics')->where('name', 'screenshots')->get()){
+            DB::table('statistics')->where('name', 'screenshots')->increment('amount');
+        } else {
+            DB::table('')->insert(
+                ['name' => 'screenshots', 'amount' => 1]
+            );
+        }
+
         return url('/ss/'.$filename);
 
-
     })->name('api.sharex');
+
+    Route::get('/sharex/stats', 'PortfolioController@showScreenshots')->name('api.sharex.stats');
 
     /**
      * Route for the projects to show on the homepage.
