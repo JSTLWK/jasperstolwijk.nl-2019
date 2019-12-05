@@ -7,6 +7,7 @@ use App\Mail\PortfolioContactEmail;
 use App\Mail\PortfolioContactUser;
 use App\Project;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 
 class PortfolioController extends Controller
@@ -150,5 +151,13 @@ class PortfolioController extends Controller
 
 
         return response()->json(['success' => true]);
+    }
+
+    public function showScreenshots(){
+
+        $screenshots = DB::table('statistics')->where('name', 'screenshots')->first();
+
+        return response()->json(['screenshots_made' => $screenshots->amount]);
+
     }
 }
