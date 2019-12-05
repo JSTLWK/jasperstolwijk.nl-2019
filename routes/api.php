@@ -45,7 +45,7 @@ Route::middleware('throttle:30|60,1')->prefix('/v1')->group(function () {
 
     })->name('api.sharex');
 
-    Route::get('/sharex/stats', 'PortfolioController@showScreenshots')->name('api.sharex.stats');
+    Route::get('/sharex/stats', 'Api\PortfolioController@showScreenshots')->name('api.sharex.stats');
 
     /**
      * Route for the projects to show on the homepage.
