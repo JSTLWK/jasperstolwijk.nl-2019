@@ -11,6 +11,12 @@
 |
 */
 
+use Illuminate\Http\Request;
+
 Route::get('/', function () {
     return view('portfolio');
+});
+
+Route::get('/school/stageverslag-lennyclub', function () {
+    return view('school.verslag-lennyclub');
 });
