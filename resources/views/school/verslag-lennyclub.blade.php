@@ -18,8 +18,6 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.css"/>
 
 
-
-
 </head>
 <body class="bg-gray-bg">
 <div id="app">
@@ -286,18 +284,32 @@
                 worden vanaf de grond af. Natuurlijk wel met oude voorbeelden maar met een nieuw systeem en met een
                 nieuwe frameworks. Dit project verliep zo goed als vlekkeloos.
             </p>
+
+            <h3 class="text-2xl">Media</h3>
+            <p class="text-sm">Foto’s van de website en het bouwen van de website en Antlers template zijn hieronder te vinden met een
+                kleine uitleg. wat het doet en welke functie het heeft.
+            </p>
         </div>
 
 
         <div class="gallery flex flex-wrap">
-            <a href="{{URL::asset('/img/school/lenny/lennys-post.png')}}" data-caption="Lenny's post pagina gebwoud met statamic en tailwindCSS">
-                <img src="{{URL::asset('/img/school/lenny/lennys-post.png')}}" class="h-48" alt="First image">
+            <a href="{{URL::asset('/img/school/lenny/lennys-post.png')}}"
+               data-caption="Lenny's post pagina gebwoud met statamic en tailwindCSS">
+                <img src="{{URL::asset('/img/school/lenny/lennys-post.png')}}"
+                     class="h-48"
+                     alt="First image">
             </a>
-            <a href="{{URL::asset('/img/school/lenny/lennys-cp.png')}}" data-caption="Lenny's website content bewerken via Statamic CMS.">
-                <img src="{{URL::asset('/img/school/lenny/lennys-cp.png')}}" class="h-48" alt="First image">
+            <a href="{{URL::asset('/img/school/lenny/lennys-cp.png')}}"
+               data-caption="Lenny's website content bewerken via Statamic CMS.">
+                <img src="{{URL::asset('/img/school/lenny/lennys-cp.png')}}"
+                     class="h-48"
+                     alt="First image">
             </a>
-            <a href="{{URL::asset('/img/school/lenny/lennys-camping.png')}}" data-caption="Lenny's Camping pagina gebwoud met statamic, tailwindCSS en Google API.">
-                <img src="{{URL::asset('/img/school/lenny/lennys-camping.png')}}" class="h-48" alt="Second image">
+            <a href="{{URL::asset('/img/school/lenny/lennys-camping.png')}}"
+               data-caption="Lenny's Camping pagina gebwoud met statamic, tailwindCSS en Google API.">
+                <img src="{{URL::asset('/img/school/lenny/lennys-camping.png')}}"
+                     class="h-48"
+                     alt="Second image">
             </a>
 
         </div>
