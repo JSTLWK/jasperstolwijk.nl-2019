@@ -23,6 +23,7 @@
 <div id="app">
     <div class="header">
         <div class="p-3 pr-10 w-full flex h-20 header__title">
+
             <svg class="h-5"
                  id="logo"
                  xmlns="http://www.w3.org/2000/svg"
@@ -86,9 +87,8 @@
         <div class="w-2/4 mb-5">
             <h2 class="text-3xl">Project binnen Lennyclub</h2>
             <p class="text-sm mb-5">Dit project is gemaakt vanuit een bestaande design met bestaande inhoud. Het plan
-                was om
-                de website
-                zoveel mogelijk te kopiëren en verbeteren indien mogelijk en makkelijk haalbaar te halen.</p>
+                was om de website zoveel mogelijk te kopiëren en verbeteren indien mogelijk en makkelijk haalbaar te
+                halen.</p>
             <p class="text-sm">Er zijn tijdens mijn stageperiode ook nog andere projecten uitgevoerd door mij en
                 collega’s, aangezien er
                 een relevantie is van een project heb ik me strikt tot dit project gehouden in het verslag.
@@ -106,7 +106,7 @@
         <div class="w-1/2 pr-5 mb-5">
             <h3 class="text-2xl">Wie is de klant?</h3>
             <p class="text-sm">De klant is Lennyclub, lennyclub is een onderdeel van het Team Animation. Team Animation
-                is een animatie bedrijf die zorgd voior animatie maatwerk op de campings in vooral Frankrijk. Om voor de
+                is een animatie bedrijf die zorgd voor animatie maatwerk op de campings in vooral Frankrijk. Om voor de
                 nederlandse mensen de animatie te vertonen hebben ze de informatie op een website staan zodat het
                 duidelijk is welke camping ze hebben en kleinigheden voor de kinderen. Ook hebben ze informatie voor de
                 ouders over Lennyclub.</p>
@@ -114,23 +114,23 @@
 
         <div class="w-1/2 pl-5 mb-5">
             <h3 class="text-2xl">Hoe is de website opgebouwd?</h3>
-            <p class="text-sm">De website is opgebouwd door middel van Laravel en Statamic CMS. Hierbij zijn
-                verschillende addons gebruikt die kan worden gekocht met Statamic CMS. Zoals Aardvark SEO om de SEO
-                (Search engine optimalisation) te verbeteren en zorgen dat deze goed tot zijn bod komt. </p>
+            <p class="text-sm">De website is opgebouwd door middel van PHP met het framework Laravel met daarin een CMS
+                genaamt Statamic. Hierbij zijn verschillende addons gebruikt die kan worden gekocht met een toevoeging
+                op Statamic CMS. Zoals Aardvark SEO om de Search engine optimalisation te verbeteren en zorgen dat deze
+                goed tot zijn bod komt.</p>
         </div>
 
         <div class="w-1/2">
             <h3 class="text-2xl">Uitdaging Punten</h3>
             <p class="text-sm mb-5">Er waren verschillende uitdagingen punten tijdens dit product, zowel als in de
-                front-end
-                en in het begrijpen van de framework. de volgende uitdaging punten wist ik al voordat ik ging beginnen
-                aan het project.</p>
+                front-end en in het begrijpen van het framework. de volgende uitdaging punten wist ik al voordat ik ging
+                beginnen aan het project.</p>
 
             <ul class="list-inside list-disc custuom-blue-list">
                 <li class=" text-sm mb-1">Werken met een low-level CSS framework genaamd ‘Tailwind’.</li>
                 <li class=" text-sm mb-1">Werken met het framework Laravel en het CMS ‘statamic’.</li>
                 <li class=" text-sm mb-1">SEO (Search engine optimalisation) gerelateerde onderwerpen.</li>
-                <li class=" text-sm mb-1">Amazon S3 instellen voor hun.</li>
+                <li class=" text-sm mb-1"><a href="https://aws.amazon.com/s3/" target="_blank" class="text-blue-main">Amazon S3</a> CDN bucket instellen.</li>
             </ul>
         </div>
 
@@ -140,53 +140,50 @@
 
         <div class="w-full mb-5">
             <h3 class="text-2xl">Verslag</h3>
-            <p class="text-sm mb-2">Het project begon met een overleg met wat er allemaal moest gebeuren en wat er
-                allemaal
-                gedaan moest worden voor het project. Dit project had ik, en een andere stagiaire op ons gekregen om
-                samen dit project op te pakken af te maken binnen een tijd van 3 weken. Er werd concreet bespreken over
-                de fases van het opbouwen van deze website en wanneer de inhoud gevuld werd door middel van een
-                ‘meeting’.</p>
+            <p class="text-sm mb-2">Het project begon met een teamoverleg met de klant over de fases van het project.
+                Dit project werd onderverdeeld aan een andere stagiaire en ik om samen dit project op te leveren. Er
+                werd concreet besproken over de fases van het project door middel van het project management systeem
+                Jira. Hierin werden de de stappen van het project bijgehouden en wat wel/niet gedaan was door middel van
+                de watervalmethode.</p>
 
-            <p class="text-sm mb-2">Daarna hadden we 3 weken om het project op te leveren om de content te laten vullen.
-                Als
-                allereerst werd
-                de backbone opgebouwd en styleguide gemaakt, en omdat we met z’n tweeën waren konden we de taken
-                verdelen. Dus om te zorgen dat veel dingen die terugkwamen tijdens het bouwen van de website werd er een
-                styleguide van gemaakt (dus een voorbeeld van hoe het moest).</p>
+            <p class="text-sm mb-2">Daarna hadden we 3 weken om het project uit te voeren om de inhoud te laten vullen
+                door middel van Statamic CMS. Als allereerst werd de backbone opgebouwd en styleguide gemaakt, en omdat
+                we met z’n tweeën waren konden we de taken verdelen. Omdat dat we onderdelen tegen kwamen die terugkomen
+                tijdens het bouwen van de website werd er een styleguide van gemaakt.
+            </p>
 
-            <p class="text-sm mb-2">Tijdens het project werd er gebruik gemaakt van GIT (De versie bitbucket daarvan) en
-                Jira
-                om de tickets
-                daarin bij te houden. Aangezien het aan elkaar gekoppelt was kon je makkelijk de commit op de ticket
-                schrijven en daarmee weer uit komen op de ticket dus wist je wat er gedaan was op dat moment en hoeveel
-                er op geschreven staat.</p>
+            <p class="text-sm mb-2">Tijdens het project werd er gebruik gemaakt van GIT met als Remote interface
+                BitBucket en Jira om het project mangement daarin bij te houden. Aangezien het aan elkaar gekoppelt was
+                kon je makkelijk de git commits op de issue key schrijven en daarmee weer uit komen op de issue dus wist
+                je wat er gedaan was op dat moment en hoeveel er op geschreven staat.
+            </p>
 
             <p class="text-sm mb-2">Er waren ook afspraken die binnen in het bedrijf werken, Ze maakte gebruik van de
-                BEM
-                methode voor het
-                benoemen van de classes in CSS indien nodig in tailwindCSS. Als variabele namen is het snake_case
-                gebruikelijke in PHP, in Javascript is het lowerCamelCase en deze werden ook vaak aangehouden.</p>
+                BEM methode voor het benoemen van de classes in CSS indien nodig in tailwindCSS. Als variabele namen is
+                het lowerCamelCase gebruikelijke in PHP en Javascriptdeze werden ook vaak
+                aangehouden.
+            </p>
             </p>
         </div>
 
         <div class="w-2/3 pr-4">
             <h4 class="text-xl">Backbone opbouwen</h4>
             <p class="text-sm mb-2">Ik moest de backbone opbouwen, hierbij zat dus in dat er collections, pagina’s en
-                relaties tot elkaar
-                opgebouwd moest worden. De website had twee talen en die moesten beide weer terug komen dus er moest
-                gebruik worden gemaakt van locales. De eerste (standaard is Nederlands) en de tweede taal was Frans.
-                Hierbij had ik geen moeite omdat er op dit onderdeel een hele duidelijke uitleg is hoe je dit moet
-                maken. Dus dit was binnen een halve dag af en zo konden we de volgende dag beginnen aan iets nieuws.
-            </p>
+                relaties tot elkaar opgebouwd moest worden. De website heeft twee talen en die moesten beide weer terug
+                komen dus er moest gebruik worden gemaakt van locales. De eerste (standaard is Nederlands) en de tweede
+                taal was Frans. Hierbij had ik geen moeite omdat er op dit onderdeel een hele duidelijke uitleg is hoe
+                je dit moet maken. Dus dit was binnen een halve dag af en zo konden we de volgende dag beginnen aan iets
+                nieuws.</p>
 
             <p class="text-sm mb-2"> Naast de backbone opbouwen heb ik ook gezorgd dat tailwind werkt zoals het zal
-                moeten werken. Hiervoor
-                was yarn, tailwindCSS, purgeCSS, postcss en webpack nodig voor het compileren.</p>
+                moeten werken. Hiervoor was yarn, <a href="https://tailwindcss.com/" target="_blank" class="text-blue-main">tailwindCSS</a>,
+                <a href="https://purgecss.com/" target="_blank" class="text-blue-main">purgeCSS</a>, postcss en webpack nodig voor het compileren.
+            </p>
 
             <p class="text-sm mb-2">Dit zijn packages die je kan downloaden met verschillende inhoud van NPM (Node
-                package manager) deze
-                zijn een toevoeging op je website en zo kan je makkelijk delen van andere mensen/bedrijven gebruiken met
-                hun toestemming daarvoor.</p>
+                package manager) deze zijn een toevoeging op je website en zo kan je makkelijk delen van andere
+                mensen/bedrijven gebruiken met hun toestemming daarvoor.
+            </p>
             </p>
         </div>
 
@@ -286,7 +283,8 @@
             </p>
 
             <h3 class="text-2xl">Media</h3>
-            <p class="text-sm">Foto’s van de website en het bouwen van de website en Antlers template zijn hieronder te vinden met een
+            <p class="text-sm">Foto’s van de website en het bouwen van de website en Antlers template zijn hieronder te
+                vinden met een
                 kleine uitleg. wat het doet en welke functie het heeft.
             </p>
         </div>
