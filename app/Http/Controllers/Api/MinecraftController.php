@@ -49,6 +49,7 @@ class MinecraftController extends Controller
         $username === "kamerplant" ? $time = "03-11-2018" : NULL;
         $username === "carcroft" ? $time = "03-03-2018" : NULL;
         $username === "kualdir" ? $time = "17-02-2018" : NULL;
+        $username === "okexox" ? $time = "06-10-2017" : NULL;
 
         if ($time) {
             $time = Carbon::parse($time);
