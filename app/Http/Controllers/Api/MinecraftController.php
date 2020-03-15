@@ -46,7 +46,7 @@ class MinecraftController extends Controller
         $time = NULL;
 
         $username === "hoopless" ? $time = "03-03-2018" : NULL;
-        $username === "kamerplant" ? $time = "11-03-2018" : NULL;
+        $username === "kamerplant" ? $time = "03-11-2018" : NULL;
         $username === "carcroft" ? $time = "03-03-2018" : NULL;
         $username === "kualdir" ? $time = "17-02-2018" : NULL;
 
