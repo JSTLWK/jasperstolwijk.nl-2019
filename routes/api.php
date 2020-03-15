@@ -15,10 +15,6 @@ use Illuminate\Support\Str;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
-
 Route::middleware('throttle:120,1')->prefix('/v1')->group(function () {
 
     Route::get('/punisher/di' ,function () {
@@ -535,6 +531,10 @@ Route::middleware('throttle:120,1')->prefix('/v1')->group(function () {
     })->name('api.sharex');
 
     Route::get('/sharex/stats', 'Api\PortfolioController@showScreenshots')->name('api.sharex.stats');
+
+    Route::get('/minecraft/{username}', 'Api\MinecraftController@show')->name('minecraft.stats');
+    Route::get('/minecraft/{username}/img', 'Api\MinecraftController@showImage')->name('minecraft.stats');
+
 
     /**
      * Route for the projects to show on the homepage.
