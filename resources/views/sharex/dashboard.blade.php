@@ -73,7 +73,7 @@
                                 <div class="flex flex-wrap px-3 py-1">
                                     <div class="w-1/3 h-12">
                                         <img src="{{$screenshot->url}}"
-                                             class="w-full"
+                                             class="w-full h-10"
                                              alt="">
                                     </div>
                                     <div class="w-2/3 h-12 pl-2 overflow-hidden">
