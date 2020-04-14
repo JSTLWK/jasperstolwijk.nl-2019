@@ -11,6 +11,7 @@ module.exports = {
                 },
                 blue: {
                     main: '#008FA8',
+                    darker: '#00798f',
                 },
                 brands: {
                     twitter: '#1DA1F2',
