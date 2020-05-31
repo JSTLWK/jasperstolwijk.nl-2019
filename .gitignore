@@ -10,6 +10,7 @@
 /public/js/app.js
 /public/js/dashboard.js
 /public/js/docs.js
+/public/js/gallery.js
 /storage/*.key
 /vendor
 .env

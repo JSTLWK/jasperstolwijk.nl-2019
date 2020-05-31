@@ -15,8 +15,6 @@ let atImport      = require('postcss-import');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-   .js('resources/js/ShareX/dashboard.js', 'public/js')
-   .js('resources/js/ShareX/docs.js', 'public/js')
    .sass('resources/sass/app.scss', 'public/css')
    .options({
        processCssUrls: false,

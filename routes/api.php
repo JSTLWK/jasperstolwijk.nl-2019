@@ -17,24 +17,6 @@ use Illuminate\Support\Str;
 
 Route::middleware('throttle:120,1')->prefix('/v1')->group(function () {
 
-    /**
-     * Route for the Sharex/screenshot function on this webpage.
-     */
-    Route::prefix('/sharex')->group(function () {
-        Route::post('/create', 'Api\ShareXController@create')->name('api.sharex');
-        Route::get('/gettoken', 'Api\ShareXController@generateToken')->name('api.sharex.gettoken');
-        Route::get('/latestnews', 'Api\ShareXController@latestNews')->name('api.sharex.latestnews');
-        Route::get('/getnewToken', 'Api\ShareXController@generateToken')->name('api.sharex.gettoken');
-        Route::get('/stats/{domain}', 'Api\ShareXController@showScreenshots')->name('api.sharex.stats');
-    });
-
-    /**
-     * Hypixel date/days of being part of the team.
-     */
-
-    Route::get('/minecraft/{username}', 'Api\MinecraftController@show')->name('minecraft.stats');
-    Route::get('/minecraft/{username}/img', 'Api\MinecraftController@showImage')->name('minecraft.stats');
-
 
     /**
      * Route for the projects to show on the homepage.
