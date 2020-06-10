@@ -1326,7 +1326,7 @@
         <div class="container mx-auto py-10 flex flex-wrap">
             <div class="w-full sm:w-1/2 flex flex-col justify-center items-center px-2 sm:px-0 sm:text-right">
                 <h2 class="w-full text-3xl font-bold">Well-known with Laravel and Vue</h2>
-                <p class="w-full text-lg">For about 1 year I've been working with Laravel and Vue. Developing more
+                <p class="w-full text-lg">Since 2019 I've been working with Laravel and Vue. Developing more
                     knowledge
                     around these frameworks are
                     what I love doing. I've worked with a ton of projects which contained the Laravel framework and love
