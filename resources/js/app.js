@@ -21,13 +21,18 @@ window.Vue = require('vue');
 
 Vue.component('contact-me', require('./components/Portfolio/ContactMe').default);
 Vue.component('portfolio-filter', require('./components/Portfolio/ProjectsFilter').default);
+Vue.component('portfolio-filter-new', require('./components/Portfolio/ProjectsFilterNew').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-
-const app = new Vue({
-    el: '#app',
+document.addEventListener('DOMContentLoaded', (event) => {
+    if (document.getElementById('app')) {
+        const app = new Vue({
+            el: '#app',
+        });
+    }
 });
+
