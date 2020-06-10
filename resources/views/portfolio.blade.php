@@ -1,5 +1,8 @@
 @extends('componets.layout')
 
+@section('title', 'Full Stack Developer')
+@section('meta-desc', 'My name is Jasper Stolwijk, I\'m an student and Full-stack Developer')
+
 @section('content')
 
     {{--  Section 1: Intro/Header   --}}

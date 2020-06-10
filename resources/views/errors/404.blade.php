@@ -1,5 +1,8 @@
 @extends('componets.layout')
 
+@section('title', 'Page not found')
+@section('meta-desc', 'This page could not be found on this website. Please look at the homepage for more information about me.')
+
 @section('max-view-screen', 'flex flex-col h-screen justify-between')
 
 @section('content')

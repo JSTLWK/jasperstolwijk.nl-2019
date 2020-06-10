@@ -6,10 +6,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible"
           content="ie=edge">
-    <title>Jasper's Test Page</title>
+    <title>Jasper Stolwijk | @yield('title')</title>
     <link rel="stylesheet"
           type="text/css"
           href="{{ url('/css/app.css') }}"/>
+    <meta name="description" content="@yield('meta-desc')">
+
     <script src="https://kit.fontawesome.com/addd2f43dd.js"
             crossorigin="anonymous"></script>
 
