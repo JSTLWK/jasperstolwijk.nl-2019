@@ -1,6 +1,7 @@
 const mix         = require('laravel-mix');
 const tailwindcss = require('tailwindcss');
 let atImport      = require('postcss-import');
+require('laravel-mix-purgecss');
 
 
 /*
@@ -19,4 +20,5 @@ mix.js('resources/js/app.js', 'public/js')
    .options({
        processCssUrls: false,
        postCss: [atImport(), tailwindcss('./tailwind.config.js')],
-   });
+   })
+   .purgeCss();

@@ -17,7 +17,7 @@
         <div class="hidden sm:flex flex-wrap sm:-mt-24">
             <div class="flex mr-24 overflow-hidden relative w-full">
                 <div class="z-10 relative text-white flex items-center text-white justify-center  text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 mt-1 mt-2 w-2/4" viewBox="0 0 148.856 170.886">
+                    <svg width="300px" xmlns="http://www.w3.org/2000/svg" class="ml-1 mt-1 mt-2 w-2/4" viewBox="0 0 148.856 170.886">
                         <path id="Path_1" data-name="Path 1" d="M40.5-76.3c8.3,10.9,8.9,29.2,13.3,43.1,4.4,14,12.6,23.6,14.6,34.3,2,10.8-2.3,22.7-8.9,32.9C53,44.2,44.1,52.7,33.8,60.8c-10.3,8.2-22,16-35.9,19.6-13.8,3.6-29.8,3-37.7-6.5-7.9-9.6-7.8-28-14.6-41.8S-74.9,9.1-78.8-2.2c-3.8-11.4,2.2-25,11-35.3C-59-47.9-47.4-55-35.7-63.9c11.8-8.9,23.8-19.6,37.8-23.2S32.2-87.1,40.5-76.3Z" transform="translate(79.962 88.45)" fill="#4299e1"/>
                     </svg>
 
