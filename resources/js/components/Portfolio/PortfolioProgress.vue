@@ -10,21 +10,21 @@
 
             <div>
                 <h2 class="text-3xl mb-10 text-center">2018</h2>
-                <div class="overflow-scroll mx-56" :style="{height: '500px'}">
+                <div class="overflow-scroll overflow-x-hidden mx-56" :style="{height: '500px'}">
                     <img src="/img/portfolio-progress/2018.png"
                          alt="">
                 </div>
             </div>
             <div>
                 <h2 class="text-3xl mb-10 text-center">2019</h2>
-                <div class="overflow-scroll mx-56" :style="{height: '500px'}">
+                <div class="overflow-scroll overflow-x-hidden mx-56" :style="{height: '500px'}">
                     <img src="/img/portfolio-progress/2019.png"
                          alt="">
                 </div>
             </div>
             <div>
                 <h2 class="text-3xl mb-10 text-center">2020</h2>
-                <div class="overflow-scroll mx-56" :style="{height: '500px'}">
+                <div class="overflow-scroll overflow-x-hidden mx-56" :style="{height: '500px'}">
                     <img src="/img/portfolio-progress/2020.png"
                          alt="">
                 </div>
@@ -70,7 +70,7 @@
         position: absolute;
         z-index: 1000;
         top: 50%;
-        right: -60px;
+        right: -60px; overflow-x-hidden
     }
     .slick-prev{
         position: absolute;
