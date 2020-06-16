@@ -12,6 +12,12 @@ body.font-roboto{
     font-family: 'Roboto', sans-serif;
 }
 
+/*! purgecss start ignore */
+@import "./node_modules/vue-slick-carousel/dist/vue-slick-carousel";
+
+/*! purgecss end ignore */
+
+
 // Projects (Homepage)
 //@import "portfolio/heading";
 //@import "portfolio/projects";

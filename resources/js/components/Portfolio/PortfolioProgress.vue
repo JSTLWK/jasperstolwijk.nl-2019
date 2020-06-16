@@ -41,7 +41,6 @@
 
 <script>
     import VueSlickCarousel from 'vue-slick-carousel'
-    import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 
     export default {
         name: "PortfolioProgress",
@@ -65,6 +64,8 @@
 </script>
 
 <style scoped>
+    /*! purgecss start ignore */
+
     .slick-next{
         position: absolute;
         z-index: 1000;
@@ -77,4 +78,6 @@
         top: 50%;
         left: -60px;
     }
+    /*! purgecss end ignore */
+
 </style>
