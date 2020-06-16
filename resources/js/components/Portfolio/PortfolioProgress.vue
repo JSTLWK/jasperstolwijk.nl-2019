@@ -70,7 +70,7 @@
         position: absolute;
         z-index: 1000;
         top: 50%;
-        right: -60px; overflow-x-hidden
+        right: -60px;
     }
     .slick-prev{
         position: absolute;
