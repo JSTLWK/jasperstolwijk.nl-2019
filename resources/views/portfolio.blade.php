@@ -1307,7 +1307,7 @@
                       opacity=".1"/>
             </svg>
         </div>
-        <div class="w-full sm:w-1/2 mt-5 sm:mt-0 px-3 sm:px-0 flex flex-col justify-center items-center">
+        <div class="text-gray-700 w-full sm:w-1/2 mt-5 sm:mt-0 px-3 sm:px-0 flex flex-col justify-center items-center">
             <h2 class="w-full text-3xl font-bold">GIT is a requirement, not a skill</h2>
             <p class="w-full text-lg">I can't imagine working on a project without using GIT. It has become my first
                 instinct when thinking of a new project when developing something I am making sure that GIT is the right
