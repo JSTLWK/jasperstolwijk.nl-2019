@@ -34,13 +34,13 @@
                         <div class="ml-2 h-3 w-3 bg-orange-300 rounded-full"></div>
                         <div class="ml-2 h-3 w-3 bg-green-500 rounded-full"></div>
                     </div>
-                    <div class="mt-4 flex flex-wrap">
+                    <div class="mt-4 flex flex-wrap" id="typing">
 
                         <div class="w-full flex">
                             <div class="text-gray-600 w-6 mr-3">
                                 1 <br>
                             </div>
-                            <span class="text-orange-500">&lt;?php</span>
+                            <span class="text-orange-500" id="typing-1"></span>
                         </div>
 
                         <div class="w-full flex">
@@ -53,8 +53,8 @@
                                 3
                             </div>
                             <div>
-                                <span class="text-orange-500">namespace</span>
-                                Model<span class="text-orange-500">;</span>
+                                <span class="text-orange-500" id="typing-2"></span>
+                                <span class="text-white" id="typing-3"></span><span class="text-orange-500" id="typing-4"></span>
                             </div>
                         </div>
                         <div class="w-full flex">
@@ -68,8 +68,9 @@
                                 5
                             </div>
                             <div>
-                                <span class="text-orange-500">class</span>
-                                JasperStolwijk<span class="text-orange-500"> {</span>
+                                <span class="text-orange-500" id="typing-5"></span>
+                                <span class="text-white" id="typing-6"></span>
+                                <span class="text-orange-500" id="typing-7"></span>
                             </div>
                         </div>
                         <div class="w-full flex">
@@ -84,9 +85,10 @@
                                 7
                             </div>
                             <div class="ml-3">
-                                <span class="text-orange-500">const</span>
-                                <span class="text-purple-400">PHP_KNOWLEDGE</span> =
-                                <span class="text-green-750">"80%"</span><span class="text-orange-500">;</span>
+                                <span class="text-orange-500" id="typing-8"></span>
+                                <span class="text-purple-400" id="typing-9"></span>
+                                <span id="typing-10"></span>
+                                <span class="text-green-750" id="typing-11"></span><span class="text-orange-500" id="typing-12"></span>
                             </div>
                         </div>
 
@@ -95,9 +97,10 @@
                                 8
                             </div>
                             <div class="ml-3">
-                                <span class="text-orange-500">const</span>
-                                <span class="text-purple-400">MYSQL_KNOWLEDGE</span> =
-                                <span class="text-green-750">"40%"</span><span class="text-orange-500">;</span>
+                                <span class="text-orange-500" id="typing-13"></span>
+                                <span class="text-purple-400" id="typing-14"></span>
+                                <span id="typing-15"></span>
+                                <span class="text-green-750" id="typing-16"></span><span class="text-orange-500" id="typing-17"></span>
                             </div>
                         </div>
                         <div class="w-full flex">
@@ -105,8 +108,10 @@
                                 9
                             </div>
                             <div class="ml-3">
-                                <span class="text-orange-500">const</span>
-                                <span class="text-purple-400">FRONT_END_KNOWLEDGE</span> = <span class="text-green-750">"60%"</span><span class="text-orange-500">;</span>
+                                <span class="text-orange-500" id="typing-18"></span>
+                                <span class="text-purple-400" id="typing-19"></span>
+                                <span id="typing-20"></span>
+                                <span class="text-green-750" id="typing-21"></span><span class="text-orange-500" id="typing-22"></span>
                             </div>
                         </div>
 
@@ -123,8 +128,8 @@
                                 11
                             </div>
                             <div class="ml-3">
-                                <span class="text-orange-500">public function</span>
-                                <span class="text-yellow-500">talking</span>() {
+                                <span class="text-orange-500" id="typing-23"></span>
+                                <span class="text-yellow-500" id="typing-24"></span><span id="typing-25"></span>
                             </div>
                         </div>
                         <div class="w-full flex">
@@ -133,7 +138,7 @@
                             </div>
                             <div class="ml-3">
                                 <div class="ml-3">
-                                    <span class="text-orange-500">echo </span><span class="text-green-750">"Enjoy my portfolio website!"</span><span class="text-orange-500">;</span>
+                                    <span class="text-orange-500" id="typing-26"></span><span class="text-green-750" id="typing-27"></span><span class="text-orange-500" id="typing-28"></span>
                                 </div>
                             </div>
                         </div>
@@ -141,8 +146,8 @@
                             <div class="text-gray-600 w-6 mr-3">
                                 13
                             </div>
-                            <div class="ml-3">
-                                }
+                            <div class="ml-3" id="typing-29">
+
                             </div>
                         </div>
 
@@ -159,7 +164,7 @@
                                 15
                             </div>
                             <div>
-                                <span class="text-orange-500">}</span>
+                                <span class="text-orange-500" id="typing-30"></span>
                             </div>
                         </div>
 
