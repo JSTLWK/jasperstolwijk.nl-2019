@@ -14,7 +14,11 @@
 
 Route::get('/', function () {
     return view('portfolio');
-});
+})->name('portfolio.home');
+
+Route::get('/about', function () {
+    return view('about');
+})->name('portfolio.about');
 
 
 Route::get('/school/stageverslag-lennyclub', function () {

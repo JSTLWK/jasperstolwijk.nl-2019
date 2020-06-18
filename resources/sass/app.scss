@@ -12,9 +12,13 @@ body.font-roboto{
     font-family: 'Roboto', sans-serif;
 }
 
-// Projects (Homepage)
-@import "portfolio/heading";
-@import "portfolio/projects";
-@import "portfolio/contact_me";
+/*! purgecss start ignore */
+@import "./node_modules/vue-slick-carousel/dist/vue-slick-carousel";
 
-@import 'baguettebox.js/dist/baguetteBox.min.css';
+/*! purgecss end ignore */
+
+
+// Projects (Homepage)
+//@import "portfolio/heading";
+//@import "portfolio/projects";
+//@import "portfolio/contact_me";
