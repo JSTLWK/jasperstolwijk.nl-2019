@@ -7,6 +7,7 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+import VueLazyLoad from 'vue-lazyload'
 
 /**
  * The following block of code may be used to automatically register your
@@ -22,6 +23,8 @@ window.Vue = require('vue');
 Vue.component('contact-me', require('./components/Portfolio/ContactMe').default);
 Vue.component('portfolio-filter-new', require('./components/Portfolio/ProjectsFilterNew').default);
 Vue.component('portfolio-progress', require('./components/Portfolio/PortfolioProgress').default);
+Vue.component('about-me-gallery', require('./components/Portfolio/AboutMeGallery').default);
+Vue.use(VueLazyLoad);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

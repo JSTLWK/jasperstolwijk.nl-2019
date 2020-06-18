@@ -196,6 +196,9 @@
             share them with you.
         </p>
 
+        <div id="app">
+            <about-me-gallery />
+        </div>
         {{-- ToDo: VueJs Lazy Loading images (6 images at first 3 x 2) --}}
 
     </div>
