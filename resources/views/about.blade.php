@@ -5,8 +5,8 @@
 @section('content')
 
     <div class="container mx-auto flex flex-wrap my-12">
-        <div class="w-1/2 flex justify-center items-center">
-            <div>
+        <div class="w-full sm:w-1/2 flex justify-center items-center">
+            <div class="px-4 sm:px-0">
                 <h2 class="text-4xl font-bold text-gray-700">So, Here I am Jasper!</h2>
                 <p class="text-lg text-gray-700">
                     I enjoy taking complex problems and turning them into solutions for the liking of the customer. I
@@ -19,7 +19,7 @@
                 </p>
             </div>
         </div>
-        <div class="w-1/2 flex justify-center items-center">
+        <div class="w-full mt-12 sm:mt-0 sm:w-1/2 flex justify-center items-center">
             <svg xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink"
                  class="w-2/3"
@@ -76,7 +76,7 @@
         <div class="container mx-auto py-12 text-white">
             <h3 class="text-4xl text-center font-bold mb-10">History</h3>
             <div class="flex flex-wrap">
-                <div class="w-1/2 flex items-center">
+                <div class="w-full sm:w-1/2 mb-12 sm:mb-0 flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink"
                          class="w-2/3 ml-auto  mr-24"
@@ -98,7 +98,7 @@
                               fill="url(#history)"/>
                     </svg>
                 </div>
-                <div class="w-1/2 text-lg">
+                <div class="w-full sm:w-1/2 text-lg px-4 sm:px-0">
                     I got my first laptop at the age of 6 which was a high-end laptop for that time being with Windows
                     XP on it. Started to play a game called ‘Habbo Hotel’ which was popular in my country and most
                     children played it. After a few years my friends on their created their own ‘Habbo Hotel’ called
@@ -127,13 +127,14 @@
     </div>
 
     <div class="bg-blue-200 py-12 text-gray-700">
-        <div class="container mx-auto" id="app">
-            <h3 class="text-4xl font-bold">Progress of this portfolio</h3>
-            <p class="w-1/2">
+        <div class="container mx-auto"
+             id="app">
+            <h3 class="text-4xl font-bold px-4 sm:px-0">Progress of this portfolio</h3>
+            <p class="w-full sm:w-1/2 px-4 sm:px-0">
                 Over the past years, you can see my experience and my skills grow on this website. As well when it comes
                 to creating the website as when it comes to making sure the user-experience is acting as expected.
             </p>
-            <portfolio-progress />
+            <portfolio-progress/>
 
         </div>
         {{-- Process of the projects (Vue element) --}}
@@ -152,23 +153,23 @@
         <div class="container mx-auto mb-24">
             <h3 class="text-4xl font-bold text-center mb-10">Contact methods</h3>
             <div class="flex flex-wrap justify-center items-center">
-                <div class="w-1/5 flex flex-col justify-center items-center">
+                <div class="w-1/2 sm:w-1/5 flex my-1 sm:my-0 flex-col justify-center items-center">
                     <i class="fab fa-twitter fa-6x"></i>
                     <p class="mt-5">@HooplessMC</p>
                 </div>
-                <div class="w-1/5 flex flex-col justify-center items-center">
+                <div class="w-1/2 sm:w-1/5 flex my-1 sm:my-0 flex-col justify-center items-center">
                     <i class="far fa-envelope-open fa-6x"></i>
                     <p class="mt-5">jasperstolwijk@icloud.com</p>
                 </div>
-                <div class="w-1/5 flex flex-col justify-center items-center">
+                <div class="w-1/2 sm:w-1/5 flex my-1 sm:my-0 flex-col justify-center items-center">
                     <i class="fab fa-linkedin fa-6x"></i>
                     <p class="mt-5">jasperstolwijk</p>
                 </div>
-                <div class="w-1/5 flex flex-col justify-center items-center">
+                <div class="w-1/2 sm:w-1/5 flex my-1 sm:my-0 flex-col justify-center items-center">
                     <i class="fab fa-github fa-6x"></i>
                     <p class="mt-5">Hoopless</p>
                 </div>
-                <div class="w-1/5 flex flex-col justify-center items-center">
+                <div class="w-1/2 sm:w-1/5 flex my-1 sm:my-0 flex-col justify-center items-center">
                     <i class="fas fa-phone fa-6x"></i>
                     <p class="mt-5">+31 6 28 33 31 43</p>
                 </div>
@@ -189,7 +190,7 @@
 
     <div class="container mx-auto text-gray-700">
         <h3 class="text-4xl font-bold text-center">Beautiful pictures</h3>
-        <p class="text-lg text-center mx-56">
+        <p class="text-lg text-center mx-12 sm:mx-56">
             Since I was born, I’ve travelled across the world to see
             the most beautiful places and cultures around the world.
             I’ve captured this by taking pictures and I would like to
@@ -197,7 +198,7 @@
         </p>
 
         <div id="app">
-            <about-me-gallery />
+            <about-me-gallery/>
         </div>
         {{-- ToDo: VueJs Lazy Loading images (6 images at first 3 x 2) --}}
 

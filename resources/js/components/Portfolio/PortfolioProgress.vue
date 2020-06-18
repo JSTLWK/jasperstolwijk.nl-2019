@@ -3,34 +3,34 @@
         <VueSlickCarousel v-bind="settings">
 
             <template #prevArrow="arrowOption">
-                <div class="h-12 rounded-full w-12 bg-blue-500 text-center flex items-center justify-center text-white">
+                <div class="h-12 hidden sm:flex rounded-full w-12 bg-blue-500 text-center items-center justify-center text-white">
                     <i class="fas fa-chevron-left"></i>
                 </div>
             </template>
 
             <div>
                 <h2 class="text-3xl mb-10 text-center">2018</h2>
-                <div class="overflow-scroll overflow-x-hidden mx-56" :style="{height: '500px'}">
+                <div class="overflow-scroll overflow-x-hidden mx-12 sm:mx-56" :style="{height: '500px'}">
                     <img src="/img/portfolio-progress/2018.png"
                          alt="">
                 </div>
             </div>
             <div>
                 <h2 class="text-3xl mb-10 text-center">2019</h2>
-                <div class="overflow-scroll overflow-x-hidden mx-56" :style="{height: '500px'}">
+                <div class="overflow-scroll overflow-x-hidden mx-12 sm:mx-56" :style="{height: '500px'}">
                     <img src="/img/portfolio-progress/2019.png"
                          alt="">
                 </div>
             </div>
             <div>
                 <h2 class="text-3xl mb-10 text-center">2020</h2>
-                <div class="overflow-scroll overflow-x-hidden mx-56" :style="{height: '500px'}">
+                <div class="overflow-scroll overflow-x-hidden mx-12 sm:mx-56" :style="{height: '500px'}">
                     <img src="/img/portfolio-progress/2020.png"
                          alt="">
                 </div>
             </div>
             <template #nextArrow="arrowOption">
-                <div class="h-12 rounded-full w-12 bg-blue-500 text-center flex items-center justify-center text-white">
+                <div class="h-12 hidden sm:flex rounded-full w-12 bg-blue-500 text-center items-center justify-center text-white">
                     <i class="fas fa-chevron-right"></i>
                 </div>
             </template>
