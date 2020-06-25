@@ -71,7 +71,7 @@ internal server error",
 
             $domain = getenv('APP_URL');
 
-            $slackUrI     = "https://hooks.slack.com/services/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";
+            $slackUrI     = getenv('SLACK_HOOK_ERROR_URL');
             $Errormessage = "An error has been found on the domain: *<{$domain}|{$domain}>*";
 
             $message['attachments'][0]['blocks'][0]['text']['text']      = $Errormessage;
