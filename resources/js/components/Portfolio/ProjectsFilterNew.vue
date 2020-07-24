@@ -265,6 +265,8 @@
                 },
                 title: "",
                 projects: "",
+                seo: {}
+
             }
         },
         watch: {
@@ -300,8 +302,18 @@
                 axios.get(url)
                      .then(function(response) {
                          self.projects = response.data;
+                         self.projects.forEach( project => {
+                             console.log(project)
+                         })
                      })
                      .catch(function(error) {
+                         let json = {
+                             "@context": "https://schema.org/",
+                             "@type": "CreativeWork",
+
+                         }
+
+                         self.seo.push()
                          console.log(error);
                      });
             }
