@@ -1,10 +1,9 @@
-@extends('componets.layout')
+@extends('components.layout')
 
 @section('title', 'Full Stack Developer')
 @section('meta-desc', 'My name is Jasper Stolwijk, I\'m an student and Full-stack Developer')
 
 @section('content')
-
     {{--  Section 1: Intro/Header   --}}
     <div class="text bg-blue-500">
         <div class="container mx-auto flex flex-wrap py-5 sm:px-10 sm:pt-32">
@@ -1520,11 +1519,10 @@
         </svg>
     </div>
 
-
-
     {{-- Section Projects --}}
     <div id="projects">
         <portfolio-filter-new endpoint="{{ route('api.projects') }}" />
     </div>
 
+    @include('components.seo.person')
 @endsection
