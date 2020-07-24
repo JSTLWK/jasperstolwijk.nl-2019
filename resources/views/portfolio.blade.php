@@ -1,7 +1,7 @@
 @extends('components.layout')
 
 @section('title', 'Full Stack Developer')
-@section('meta-desc', 'My name is Jasper Stolwijk, I\'m an student and Full-stack Developer')
+@section('meta-desc', 'My name is Jasper Stolwijk, I\'m an student and Full-stack Developer. I like to work to solve issues for companies or people that involves the internet. ')
 
 @section('content')
     {{--  Section 1: Intro/Header   --}}
@@ -10,7 +10,7 @@
 
             <div class="w-full sm:w-1/2 px-2 mb-2 sm:mb-0 text-white flex">
                 <div class="sm:mr-12 mt-10">
-                    <h2 class="text-4xl font-medium"><span class="uppercase">It's me!</span> Jasper Stolwijk</h2>
+                    <h1 class="text-4xl font-medium"><span class="uppercase">It's me!</span> Jasper Stolwijk</h1>
                     <p class="text-lg">Yes, this is me, Jasper Stolwijk. I'm an IT Nerd and also an IT Student living my
                         life in the Netherlands. Besides developing applications, I am a traveller, soccer lover and
                         like
@@ -1519,7 +1519,7 @@
         </svg>
     </div>
 
-    {{-- Section Projects --}}
+    {{-- Section 4: Projects --}}
     <div id="projects">
         <portfolio-filter-new endpoint="{{ route('api.projects') }}" />
     </div>

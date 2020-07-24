@@ -232,8 +232,8 @@
                         <div :style="{ backgroundImage: `url('${project.head_img}')` }"
                              class="bg-gray-300 h-64 w-full rounded-lg shadow-md bg-cover bg-center"></div>
                         <div class="w-56 md:w-64 bg-white -mt-32 shadow-lg rounded-lg overflow-hidden">
-                            <div class="py-2 text-center font-bold uppercase tracking-wide text-gray-800">{{
-                                project.title}}
+                            <div class="py-2 text-center font-bold uppercase tracking-wide text-gray-800">
+                                {{ project.title }}
                             </div>
                             <div class="flex h-32 px-3 bg-blue-200">
                                 <p class="text-blue-800 text-center text-sm font-bold pt-1">

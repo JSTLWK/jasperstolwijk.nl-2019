@@ -1,6 +1,8 @@
 @extends('components.layout')
 
 @section('title', 'About me')
+@section('meta-desc', 'My name is Jasper. I enjoy taking complex problems and turning them into solutions. I got my first laptop at the age of 6. Want to know more? Find out! :D')
+
 
 @section('content')
 
