@@ -157,11 +157,11 @@
             <div class="flex flex-wrap justify-center items-center">
                 <div class="w-1/2 sm:w-1/5 flex my-1 sm:my-0 flex-col justify-center items-center">
                     <i class="fab fa-twitter fa-6x"></i>
-                    <p class="mt-5">@HooplessMC</p>
+                    <p class="mt-5">@JSTLWK</p>
                 </div>
                 <div class="w-1/2 sm:w-1/5 flex my-1 sm:my-0 flex-col justify-center items-center">
                     <i class="far fa-envelope-open fa-6x"></i>
-                    <p class="mt-5">jasperstolwijk@icloud.com</p>
+                    <p class="mt-5">info@jasperstolwijk.nl</p>
                 </div>
                 <div class="w-1/2 sm:w-1/5 flex my-1 sm:my-0 flex-col justify-center items-center">
                     <i class="fab fa-linkedin fa-6x"></i>
