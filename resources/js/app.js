@@ -37,5 +37,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
             el: '#app',
         });
     }
+
+    // Mobile Navbar
+    let navContent = document.getElementById('navbar-content')
+    if (navContent) {
+
+        let navbarButton = document.getElementById('narbar-button')
+
+        navbarButton.addEventListener('click', event => {
+            if (navContent.classList.contains('hidden')){
+                navContent.classList.remove('hidden');
+            } else {
+                navContent.classList.add('hidden');
+            }
+        });
+    }
 });
+
+
 

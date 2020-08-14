@@ -53,11 +53,11 @@
 
 
             <div class="mr-5 sm:hidden">
-                <i class="fas fa-bars"></i>
+                <i id="narbar-button" class="fas fa-bars"></i>
             </div>
         </div>
 
-        <div class="block sm:flex h-full w-full sm:w-auto items-center">
+        <div id="navbar-content" class="hidden sm:flex h-full w-full sm:w-auto items-center">
             <a href="{{ route('portfolio.about') }}"
                class="py-4 w-full px-2 sm:w-auto border-t sm:border-0 sm:py-0 text-lg sm:text-base px-2 h-full flex items-center hover:bg-blue-400">
                 About me
