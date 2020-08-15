@@ -303,7 +303,6 @@
                      .then(function(response) {
                          self.projects = response.data;
                          self.projects.forEach( project => {
-                             console.log(project)
                          })
                      })
                      .catch(function(error) {
@@ -314,7 +313,6 @@
                          }
 
                          self.seo.push()
-                         console.log(error);
                      });
             }
         }

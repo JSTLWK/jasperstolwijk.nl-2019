@@ -19,6 +19,9 @@ import VueLazyLoad from 'vue-lazyload'
 
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+import CookieMelding from './components/CookieMelding'
+import Cookies from 'js-cookie'
+
 
 Vue.component('contact-me', require('./components/Portfolio/ContactMe').default);
 Vue.component('portfolio-filter-new', require('./components/Portfolio/ProjectsFilterNew').default);
@@ -31,11 +34,31 @@ Vue.use(VueLazyLoad);
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+
+window.CookiePopUp = function() {
+    return new Promise(resolve => {
+
+        const ComponentClass = Vue.extend(CookieMelding);
+        let instance = new ComponentClass();
+
+        resolve(instance);
+
+        instance.$mount();
+        document.body.appendChild(instance.$el);
+    })
+}
+
 document.addEventListener('DOMContentLoaded', (event) => {
     if (document.getElementById('app')) {
         const app = new Vue({
             el: '#app',
         });
+    }
+
+    let cookie = Cookies.get('cookie-popup')
+
+    if (! cookie) {
+        CookiePopUp();
     }
 
     // Mobile Navbar

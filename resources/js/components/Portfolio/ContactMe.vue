@@ -159,9 +159,7 @@
                 }).then(function(response) {
                     self.isLoading = false;
                     self.completed = true;
-                    console.log(response);
                 }).catch(function(error) {
-                    console.log(error);
                     self.completed = false;
                     self.isLoading = false;
 
