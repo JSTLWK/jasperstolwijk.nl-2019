@@ -59,7 +59,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     if (! cookie) {
         CookiePopUp();
+    } else {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-173506653-2');
     }
+
+
 
     // Mobile Navbar
     let navContent = document.getElementById('navbar-content')

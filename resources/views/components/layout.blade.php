@@ -122,9 +122,9 @@
 </div>
 
 
+@include('components.seo.analytics')
+
 <script type="text/javascript"
         src="{{ url('js/app.js') }}"></script>
-
-@include('components.seo.analytics')
 </body>
 </html>
