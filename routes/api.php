@@ -30,3 +30,5 @@ Route::middleware('throttle:120,1')->prefix('/v1')->group(function () {
     });
 });
 
+Route::post('/p2000', 'Api\P2000Controller@store')->name('p2000.api');
+
