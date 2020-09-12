@@ -30,7 +30,7 @@ class P2000Controller extends Controller
         $message = $request->input('message');
         $now = Carbon::now();
 
-        DB::table('P2000-meldingen')->insert(['alert' => $message, 'updated_at' => $now, 'created_at' => $now]);
+        DB::table('p2000-meldingen')->insert(['alert' => $message, 'updated_at' => $now, 'created_at' => $now]);
     }
 
     /**
