@@ -226,7 +226,9 @@
         <div class="container mx-auto -mt-8 sm:mt-8 flex flex-wrap">
             <div v-for="project in projects"
                  class="w-full sm:w-1/3 px-2">
-                <a href=""
+                <a :href="project.url"
+                   v-if="project.url"
+                   target="_blank"
                    title="">
                     <div class="flex flex-col justify-center items-center max-w-sm mx-auto my-4">
                         <div :style="{ backgroundImage: `url('${project.head_img}')` }"
@@ -243,6 +245,21 @@
                         </div>
                     </div>
                 </a>
+
+                <div v-if="! project.url" class="flex flex-col justify-center items-center max-w-sm mx-auto my-4">
+                    <div :style="{ backgroundImage: `url('${project.head_img}')` }"
+                         class="bg-gray-300 h-64 w-full rounded-lg shadow-md bg-cover bg-center"></div>
+                    <div class="w-56 md:w-64 bg-white -mt-32 shadow-lg rounded-lg overflow-hidden">
+                        <div class="py-2 text-center font-bold uppercase tracking-wide text-gray-800">
+                            {{ project.title }}
+                        </div>
+                        <div class="flex h-32 px-3 bg-blue-200">
+                            <p class="text-blue-800 text-center text-sm font-bold pt-1">
+                                {{ project.introduction }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
