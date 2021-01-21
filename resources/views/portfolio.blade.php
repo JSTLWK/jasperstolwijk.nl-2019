@@ -85,7 +85,7 @@
                             <div class="ml-3">
                                 <span class="text-orange-500">const</span>
                                 <span class="text-purple-400">PHP_KNOWLEDGE</span> =
-                                <span class="text-green-750">"80%"</span><span class="text-orange-500">;</span>
+                                <span class="text-orange-500">true</span><span class="text-orange-500">;</span>
                             </div>
                         </div>
 
@@ -96,7 +96,7 @@
                             <div class="ml-3">
                                 <span class="text-orange-500">const</span>
                                 <span class="text-purple-400">MYSQL_KNOWLEDGE</span> =
-                                <span class="text-green-750">"40%"</span><span class="text-orange-500">;</span>
+                                <span class="text-orange-500">true</span><span class="text-orange-500">;</span>
                             </div>
                         </div>
                         <div class="w-full flex">
@@ -105,7 +105,7 @@
                             </div>
                             <div class="ml-3">
                                 <span class="text-orange-500">const</span>
-                                <span class="text-purple-400">FRONT_END_KNOWLEDGE</span> = <span class="text-green-750">"60%"</span><span class="text-orange-500">;</span>
+                                <span class="text-purple-400">REACT_KNOWLEDGE</span> = <span class="text-orange-500">true</span><span class="text-orange-500">;</span>
                             </div>
                         </div>
 
@@ -123,7 +123,7 @@
                             </div>
                             <div class="ml-3">
                                 <span class="text-orange-500">public function</span>
-                                <span class="text-yellow-500">talking</span>() {
+                                <span class="text-yellow-500">title</span>()
                             </div>
                         </div>
                         <div class="w-full flex">
@@ -131,14 +131,22 @@
                                 12
                             </div>
                             <div class="ml-3">
-                                <div class="ml-3">
-                                    <span class="text-orange-500">echo </span><span class="text-green-750">"Enjoy my portfolio website!"</span><span class="text-orange-500">;</span>
-                                </div>
+                                {
                             </div>
                         </div>
                         <div class="w-full flex">
                             <div class="text-gray-600 w-6 mr-3">
                                 13
+                            </div>
+                            <div class="ml-3">
+                                <div class="ml-3">
+                                    <span class="text-orange-500">echo </span><span class="text-green-750">"IT'S ME! Jasper Stolwijk"</span><span class="text-orange-500">;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full flex">
+                            <div class="text-gray-600 w-6 mr-3">
+                                14
                             </div>
                             <div class="ml-3">
                                 }
@@ -147,7 +155,7 @@
 
                         <div class="w-full flex">
                             <div class="text-gray-600 w-6 mr-3">
-                                14
+                                15
                             </div>
                             <div>
 
@@ -155,7 +163,7 @@
                         </div>
                         <div class="w-full flex">
                             <div class="text-gray-600 w-6 mr-3">
-                                15
+                                16
                             </div>
                             <div>
                                 <span class="text-orange-500">}</span>
@@ -164,7 +172,7 @@
 
                         <div class="w-full flex">
                             <div class="text-gray-600 w-6 mr-3">
-                                16
+                                17
                             </div>
                         </div>
                     </div>
