@@ -15,7 +15,7 @@
     <script src="https://kit.fontawesome.com/addd2f43dd.js"
             crossorigin="anonymous"></script>
             
-    <script async="" defer="" src="https://analytics.hytale.com/matomo.js"></script>
+    <script async="" defer="" src="https://analytics.jasperstolwijk.nl/matomo.js"></script>
      
 
 </head>
