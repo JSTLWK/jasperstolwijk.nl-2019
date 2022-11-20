@@ -288,15 +288,16 @@
         },
         watch: {
             filters: {
-                handler(newValue, oldValue) {
+                handler(newValue) {
+                    let url = this.endpoint;
 
                     if (newValue.tags.length > 0) {
-                        let url = this.endpoint + "?tags=" + newValue.tags;
+                        url += `?tags=${newValue.tags}`;
 
                         this.title = "";
-                        this.getProjects(url);
                     }
 
+                    this.getProjects(url);
                 },
                 deep: true
             },
@@ -329,7 +330,7 @@
 
                          }
 
-                         self.seo.push()
+                        //  self.seo.push()
                      });
             }
         }
