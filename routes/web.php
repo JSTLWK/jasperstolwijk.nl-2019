@@ -20,6 +20,10 @@ Route::get('/about', function () {
     return view('about');
 })->name('portfolio.about');
 
+Route::get('/thank-you-arthur', static function () {
+    return view('thank-you-arthur');
+})->name('thank_you.arthur');
+
 
 Route::get('/school/stageverslag-lennyclub', function () {
     return view('school.verslag-lennyclub');
